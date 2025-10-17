@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fondo circular azul -->
+  <circle cx="50" cy="50" r="48" fill="#0A2463"/>
+
+  <!-- Letras SAM en blanco -->
+  <text x="50" y="70" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#FFFFFF" text-anchor="middle">SAM</text>
+</svg>

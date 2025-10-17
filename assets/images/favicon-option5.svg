@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Opción 5: S con Regla Integrada -->
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A2463;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d3380;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="50" cy="50" r="48" fill="url(#blueGrad)"/>
+
+  <g transform="translate(50, 50)">
+    <!-- Letra S grande y elegante -->
+    <path d="M 10 -25 Q 20 -30, 15 -20 Q 10 -15, -5 -12 Q -15 -10, -12 -3 Q -10 0, 0 2 Q 10 4, 12 10 Q 15 15, 10 20 Q 5 25, -10 25 Q -20 25, -20 18"
+          fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Regla horizontal integrada en la S -->
+    <rect x="-20" y="-2" width="40" height="6" fill="#FB8500" rx="1"/>
+
+    <!-- Marcas de medición en la regla -->
+    <line x1="-18" y1="-2" x2="-18" y2="4" stroke="#FFFFFF" stroke-width="1.2"/>
+    <line x1="-12" y1="-2" x2="-12" y2="2" stroke="#FFFFFF" stroke-width="0.8"/>
+    <line x1="-6" y1="-2" x2="-6" y2="2" stroke="#FFFFFF" stroke-width="0.8"/>
+    <line x1="0" y1="-2" x2="0" y2="4" stroke="#FFFFFF" stroke-width="1.2"/>
+    <line x1="6" y1="-2" x2="6" y2="2" stroke="#FFFFFF" stroke-width="0.8"/>
+    <line x1="12" y1="-2" x2="12" y2="2" stroke="#FFFFFF" stroke-width="0.8"/>
+    <line x1="18" y1="-2" x2="18" y2="4" stroke="#FFFFFF" stroke-width="1.2"/>
+
+    <!-- Pequeño detalle AM debajo -->
+    <text x="0" y="32" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="600" fill="#FFFFFF" text-anchor="middle" opacity="0.8">AM</text>
+  </g>
+</svg>
