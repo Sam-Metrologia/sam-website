@@ -680,7 +680,12 @@ p {
 .platform-cta {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
+}
+
+.platform-cta .btn {
+    width: 100%;
+    max-width: 400px;
 }
 
 .cta-note {
