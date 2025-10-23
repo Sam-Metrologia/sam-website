@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM Resultados y Beneficios - V2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .post-container {
+            width: 1080px;
+            height: 1080px;
+            background: #0A2463;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative elements */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.05;
+            background: white;
+        }
+
+        .circle1 {
+            width: 350px;
+            height: 350px;
+            top: -100px;
+            right: -100px;
+        }
+
+        .circle2 {
+            width: 250px;
+            height: 250px;
+            bottom: -80px;
+            left: -80px;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 80px;
+            font-weight: 900;
+            letter-spacing: 10px;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 22px;
+            color: #cbd5e1;
+            letter-spacing: 2px;
+        }
+
+        .question {
+            text-align: center;
+            color: white;
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 30px;
+        }
+
+        .intro-text {
+            text-align: center;
+            color: #cbd5e1;
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 70px;
+            font-weight: 900;
+            color: #0A2463;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 20px;
+            color: #64748b;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .benefits-list {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .benefit-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .benefit-icon {
+            font-size: 20px;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 12px 25px;
+            border-radius: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .badge-icon {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .cta-section {
+            background: white;
+            border-radius: 25px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .cta-text {
+            font-size: 34px;
+            font-weight: 700;
+            color: #0A2463;
+            margin-bottom: 15px;
+        }
+
+        .cta-subtext {
+            font-size: 18px;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+
+        .cta-contact {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0A2463;
+            margin-bottom: 15px;
+        }
+
+        .cta-highlight {
+            display: inline-block;
+            background: linear-gradient(135deg, #0A2463 0%, #1e3a8a 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+
+        <div class="content">
+            <div class="header">
+                <div class="logo">SAM</div>
+                <div class="tagline">METROLOGÍA S.A.S</div>
+            </div>
+
+            <div class="question">
+                ¿Por qué organismos ISO 17020<br>
+                eligen SAM Metrología?
+            </div>
+
+            <div class="intro-text">
+                Resultados medibles y beneficios comprobados
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-label">Reducción de costos<br>vs metrólogo interno</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">9</div>
+                    <div class="stat-label">Años optimizando<br>procesos en Colombia</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Trazabilidad digital<br>ISO/IEC 17020</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Plataforma cloud<br>siempre disponible</div>
+                </div>
+            </div>
+
+            <div class="benefits-list">
+                <div class="benefit-title">Beneficios Clave</div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">⏱️</span>
+                    <span>Menos tiempo en tareas administrativas repetitivas</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">🎯</span>
+                    <span>Control total sobre equipos de medición y calibraciones</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <span>Auditorías sin estrés con documentación automática</span>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-icon">📊</span>
+                    <span>Cumplimiento normativo ISO 17020 garantizado</span>
+                </div>
+            </div>
+
+            <div class="badges">
+                <div class="badge">
+                    <span class="badge-icon">🇨🇴</span>
+                    Cobertura<br>Nacional
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">🔒</span>
+                    AWS Cloud<br>Seguro
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">🏆</span>
+                    Especialistas<br>ISO 17020
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <div class="cta-text">¿Tu organismo está listo?</div>
+                <div class="cta-subtext">Únete a organismos que ya optimizaron su gestión metrológica</div>
+                <div class="cta-contact">📞 +57 324 799 0534 | 🌐 sammetrologia.com</div>
+                <div class="cta-highlight">🎁 Prueba gratuita 30 días • Sin compromiso</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

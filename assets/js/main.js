@@ -117,9 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Get form data
+            // Get form data for validation
             const formData = {
                 nombre: document.getElementById('nombre').value,
                 empresa: document.getElementById('empresa').value,
@@ -131,27 +129,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Validate form
             if (!validateForm(formData)) {
+                e.preventDefault();
                 showMessage('Por favor completa todos los campos correctamente.', 'error');
                 return;
             }
 
-            // Create WhatsApp message
-            const whatsappMessage = createWhatsAppMessage(formData);
-            const whatsappURL = `https://wa.me/573247990534?text=${encodeURIComponent(whatsappMessage)}`;
+            // Show success message (form will submit naturally to FormSubmit)
+            showMessage('Enviando mensaje...', 'success');
 
-            // Also create email (as alternative)
-            const emailSubject = `Contacto desde Web - ${formData.empresa}`;
-            const emailBody = createEmailBody(formData);
-            const mailtoURL = `mailto:metrologiasam@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-
-            // Show success message
-            showMessage('¡Gracias por tu interés! Redirigiendo a WhatsApp...', 'success');
-
-            // Redirect to WhatsApp after 1 second
-            setTimeout(() => {
-                window.open(whatsappURL, '_blank');
-                contactForm.reset();
-            }, 1000);
+            // Form will submit naturally to FormSubmit.co
+            // FormSubmit will send email to metrologiasam@gmail.com
+            // and redirect back to the page after submission
         });
     }
 
