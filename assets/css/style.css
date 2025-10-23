@@ -1310,6 +1310,24 @@ p {
     filter: brightness(0) invert(1);
 }
 
+/* Footer Logo Text Style */
+.footer-logo-text {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+    color: var(--white);
+    font-family: var(--font-heading);
+    margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+}
+
 .footer-links h4,
 .footer-contact h4 {
     color: var(--white);
