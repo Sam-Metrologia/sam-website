@@ -63,7 +63,7 @@
         "email": "metrologiasam@gmail.com",
         "address": {
             "@type": "PostalAddress",
-            "addressCountry": "CO",
+            "@addressCountry": "CO",
             "addressLocality": "Colombia"
         },
         "areaServed": {
@@ -89,7 +89,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="assets/images/logo.png" alt="SAM Metrología">
                 </a>
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">
@@ -98,27 +98,27 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu">
-                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                    <li><a href="#plataforma" class="nav-link">Plataforma SAM</a></li>
-                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="plataforma.html" class="nav-link">Plataforma SAM</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
                     <li><a href="https://app.sammetrologia.com/core/login/" class="nav-link">Iniciar Sesión</a></li>
-                    <li><a href="#contacto" class="nav-link btn-contact">Contacto</a></li>
+                    <li><a href="contacto.html" class="nav-link btn-contact">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero">
+    <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Gestión Metrológica <span class="highlight">Inteligente y Digital</span></h1>
                 <p class="hero-subtitle">Optimizamos el control de equipos de medición con tecnología, trazabilidad y cumplimiento normativo para organizaciones en toda Colombia.</p>
                 <div class="hero-buttons">
                     <a href="https://app.sammetrologia.com/core/login/" class="btn btn-primary">Iniciar Sesión</a>
-                    <a href="#plataforma" class="btn btn-secondary">Conocer Plataforma SAM</a>
-                    <a href="#contacto" class="btn btn-secondary">Solicitar Trial de 30 Días</a>
+                    <a href="plataforma.html" class="btn btn-secondary">Conocer Plataforma SAM</a>
+                    <a href="contacto.html" class="btn btn-secondary">Solicitar Trial de 30 Días</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
@@ -138,665 +138,308 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="servicios" class="services">
+    <!-- Por Qué es Crítico - Versión Compacta -->
+    <section style="padding: 50px 0; background: #F9FAFB;">
+        <div class="container">
+            <div style="max-width: 950px; margin: 0 auto; text-align: center;">
+                <h2 style="font-size: 1.8rem; font-weight: 700; color: #0A2463; margin-bottom: 1.5rem;">Por Qué el Control Metrológico es Crítico</h2>
+                <p style="font-size: 1.05rem; color: #4B5563; margin-bottom: 2rem; line-height: 1.6;">Sin gestión metrológica adecuada, las organizaciones enfrentan riesgos que pueden costar millones y comprometer su operación:</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                    <div style="background: white; padding: 1.25rem; border-radius: 8px; border-left: 3px solid #6B7280; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                        <div style="font-weight: 600; color: #374151; font-size: 0.95rem;">Pérdida de Acreditación</div>
+                    </div>
+                    <div style="background: white; padding: 1.25rem; border-radius: 8px; border-left: 3px solid #6B7280; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                        <div style="font-weight: 600; color: #374151; font-size: 0.95rem;">Multas Regulatorias</div>
+                    </div>
+                    <div style="background: white; padding: 1.25rem; border-radius: 8px; border-left: 3px solid #6B7280; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                        <div style="font-weight: 600; color: #374151; font-size: 0.95rem;">Responsabilidad Legal</div>
+                    </div>
+                    <div style="background: white; padding: 1.25rem; border-radius: 8px; border-left: 3px solid #6B7280; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                        <div style="font-weight: 600; color: #374151; font-size: 0.95rem;">Pérdida de Contratos</div>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.05rem; color: #0A2463; font-weight: 600; background: white; padding: 1.25rem; border-radius: 8px; display: inline-block; box-shadow: 0 4px 12px rgba(10, 36, 99, 0.08);">SAM elimina estos riesgos con gestión profesional y económica</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Completos -->
+    <section class="quick-features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Nuestros Servicios</h2>
-                <p class="section-subtitle">Soluciones integrales que se adaptan a las necesidades metrológicas de tu organización</p>
+                <h2 class="section-title">Soluciones Integrales de Metrología</h2>
+                <p class="section-subtitle">No solo software: nos hacemos cargo de TODA tu metrología</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="features-grid-home">
+                <div class="feature-home">
+                    <div class="feature-icon-large">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
                         </svg>
                     </div>
-                    <h3 class="service-title">Plataforma SAM (SaaS)</h3>
-                    <p class="service-description">Software de gestión metrológica en la nube. Control total de equipos, alertas automáticas, reportes y trazabilidad completa.</p>
-                    <ul class="service-features">
-                        <li>Gestión digital de equipos</li>
-                        <li>Alertas automáticas</li>
-                        <li>Reportes en tiempo real</li>
-                        <li>Trazabilidad completa</li>
-                    </ul>
+                    <h3>Plataforma SAM (SaaS)</h3>
+                    <p>Software en la nube para control total: alertas, reportes, trazabilidad. 4 formatos profesionales incluidos.</p>
+                    <a href="plataforma.html" class="feature-link">Ver Plataforma →</a>
                 </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Gestión Documental</h3>
-                    <p class="service-description">Diseño y actualización de formatos, procedimientos e instructivos adaptados a normativa ISO/IEC 17020 y necesidades específicas.</p>
-                    <ul class="service-features">
-                        <li>Formatos personalizados</li>
-                        <li>Procedimientos ISO 17020</li>
-                        <li>Control de versiones</li>
-                        <li>Almacenamiento seguro AWS</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="feature-home">
+                    <div class="feature-icon-large">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                             <polyline points="22 4 12 14.01 9 11.01"></polyline>
                         </svg>
                     </div>
-                    <h3 class="service-title">Comprobaciones Intermedias</h3>
-                    <p class="service-description">Verificación periódica de equipos entre calibraciones para asegurar su funcionamiento y cumplimiento normativo continuo.</p>
-                    <ul class="service-features">
-                        <li>Verificación técnica</li>
-                        <li>Registro trazable</li>
-                        <li>Certificados digitales</li>
-                        <li>Cumplimiento normativo</li>
-                    </ul>
+                    <h3>Acreditación ISO/IEC 17020</h3>
+                    <p>Te ayudamos a conseguir y mantener tu acreditación ONAC. Procedimientos, formatos y acompañamiento completo.</p>
+                    <a href="servicios.html" class="feature-link">Conocer más →</a>
                 </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
+                <div class="feature-home">
+                    <div class="feature-icon-large">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
                         </svg>
                     </div>
-                    <h3 class="service-title">Acompañamiento Técnico</h3>
-                    <p class="service-description">Soporte continuo de expertos en metrología para implementación, optimización y mantenimiento de sistemas metrológicos.</p>
-                    <ul class="service-features">
-                        <li>Consultoría especializada</li>
-                        <li>Capacitación técnica</li>
-                        <li>Soporte continuo</li>
-                        <li>Auditorías internas</li>
-                    </ul>
+                    <h3>Gestión Documental</h3>
+                    <p>Creamos procedimientos, instructivos y formatos según ISO 17020. Documentación lista para auditoría.</p>
+                    <a href="servicios.html" class="feature-link">Ver Servicio →</a>
                 </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="feature-home">
+                    <div class="feature-icon-large">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Intervalos de Calibración</h3>
+                    <p>Implementación según ILAC G-24:2022. Métodos estadísticos para optimizar frecuencias y reducir costos.</p>
+                    <a href="servicios.html" class="feature-link">Ver Servicio →</a>
+                </div>
+                <div class="feature-home">
+                    <div class="feature-icon-large">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="3" y="3" width="7" height="7"></rect>
                             <rect x="14" y="3" width="7" height="7"></rect>
                             <rect x="14" y="14" width="7" height="7"></rect>
                             <rect x="3" y="14" width="7" height="7"></rect>
                         </svg>
                     </div>
-                    <h3 class="service-title">Logística de Calibración</h3>
-                    <p class="service-description">Gestión completa de calibraciones: búsqueda de laboratorios, programación, transporte y seguimiento de servicios externos.</p>
-                    <ul class="service-features">
-                        <li>Conexión con laboratorios</li>
-                        <li>Programación automática</li>
-                        <li>Seguimiento en tiempo real</li>
-                        <li>Base de datos de proveedores</li>
-                    </ul>
+                    <h3>Logística de Calibración</h3>
+                    <p>Buscamos laboratorios acreditados, coordinamos servicios, gestionamos transporte. Tú te despreocupas.</p>
+                    <a href="servicios.html" class="feature-link">Ver Servicio →</a>
                 </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="feature-home">
+                    <div class="feature-icon-large">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3>Gestión por Suscripción</h3>
+                    <p>Nos hacemos cargo de TODA tu metrología. Más económico que contratar un metrólogo de planta.</p>
+                    <a href="servicios.html" class="feature-link">Ver Servicio →</a>
+                </div>
+                <div class="feature-home">
+                    <div class="feature-icon-large">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                         </svg>
                     </div>
-                    <h3 class="service-title">Gestión por Suscripción</h3>
-                    <p class="service-description">Sistema metrológico completo por suscripción mensual. Más económico que un metrólogo interno, con toda la funcionalidad.</p>
-                    <ul class="service-features">
-                        <li>Sin inversión inicial</li>
-                        <li>Pago mensual flexible</li>
-                        <li>Escalable según necesidad</li>
-                        <li>Incluye soporte técnico</li>
-                    </ul>
+                    <h3>Compra de Equipos</h3>
+                    <p>Asesoría técnica para adquisición de equipos: especificaciones, proveedores, evaluación técnica.</p>
+                    <a href="servicios.html" class="feature-link">Ver Servicio →</a>
+                </div>
+                <div class="feature-home">
+                    <div class="feature-icon-large">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Comprobaciones Intermedias</h3>
+                    <p>Verificaciones entre calibraciones. Métodos validados, certificados profesionales, cumplimiento garantizado.</p>
+                    <a href="servicios.html" class="feature-link">Ver Servicio →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Dashboard Interactivo Section -->
-    <section class="demo-dashboard">
+    <!-- Industrias/Sectores -->
+    <section style="padding: 80px 0; background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Dashboard Interactivo en Tiempo Real</h2>
-                <p class="section-subtitle">Panel de control con métricas actualizadas automáticamente. Visualice el estado completo de sus equipos e indicadores de cumplimiento normativo.</p>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; font-weight: 800; color: #0A2463; margin-bottom: 1rem;">Sectores que Confían en SAM</h2>
+                <p style="font-size: 1.2rem; color: #4B5563;">Especialistas en Organismos de Inspección Acreditados</p>
             </div>
-
-            <div class="dashboard-container">
-                <!-- Quick Stats -->
-                <div class="dashboard-stats">
-                    <div class="stat-box">
-                        <div class="stat-icon blue">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 3v18h18"/>
-                                <path d="M18 17V9"/>
-                                <path d="M13 17V5"/>
-                                <path d="M8 17v-3"/>
-                            </svg>
-                        </div>
-                        <div class="stat-info">
-                            <span class="stat-value" data-target="100">0</span>
-                            <span class="stat-label">Equipos Registrados</span>
-                        </div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-icon green">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                        </div>
-                        <div class="stat-info">
-                            <span class="stat-value" data-target="75">0</span>
-                            <span class="stat-label">Actividades Cumplidas</span>
-                        </div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-icon orange">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12 6 12 12 16 14"/>
-                            </svg>
-                        </div>
-                        <div class="stat-info">
-                            <span class="stat-value" data-target="20">0</span>
-                            <span class="stat-label">En Programación</span>
-                        </div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-icon red">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <line x1="12" y1="8" x2="12" y2="12"/>
-                                <line x1="12" y1="16" x2="12.01" y2="16"/>
-                            </svg>
-                        </div>
-                        <div class="stat-info">
-                            <span class="stat-value" data-target="5">0</span>
-                            <span class="stat-label">No Cumplidas</span>
-                        </div>
-                    </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto;">
+                <div style="background: white; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">⚡</div>
+                    <h4 style="color: #0A2463; font-size: 1rem; font-weight: 700;">RETIE</h4>
+                    <p style="color: #6B7280; font-size: 0.85rem; margin: 0;">Instalaciones Eléctricas</p>
                 </div>
-
-                <!-- Charts Grid -->
-                <div class="dashboard-charts">
-                    <!-- Chart 1: Calibraciones -->
-                    <div class="chart-card">
-                        <h4>Cumplimiento Calibraciones</h4>
-                        <div class="chart-wrapper">
-                            <svg class="donut-chart" viewBox="0 0 200 200" data-completed="75" data-pending="20" data-not-completed="5">
-                                <circle class="donut-segment bg" cx="100" cy="100" r="80" fill="none" stroke="#e5e7eb" stroke-width="40"></circle>
-                                <circle class="donut-segment green-segment" cx="100" cy="100" r="80" fill="none" stroke="#10b981" stroke-width="40"
-                                    stroke-dasharray="0 502.4"
-                                    stroke-dashoffset="125.6"
-                                    transform="rotate(-90 100 100)"></circle>
-                                <circle class="donut-segment orange-segment" cx="100" cy="100" r="80" fill="none" stroke="#f59e0b" stroke-width="40"
-                                    stroke-dasharray="0 502.4"
-                                    stroke-dashoffset="125.6"
-                                    transform="rotate(-90 100 100)"></circle>
-                                <circle class="donut-segment red-segment" cx="100" cy="100" r="80" fill="none" stroke="#ef4444" stroke-width="40"
-                                    stroke-dasharray="0 502.4"
-                                    stroke-dashoffset="125.6"
-                                    transform="rotate(-90 100 100)"></circle>
-                                <text x="100" y="95" text-anchor="middle" font-size="32" font-weight="bold" fill="#374151">75%</text>
-                                <text x="100" y="115" text-anchor="middle" font-size="14" fill="#6b7280">Cumplidas</text>
-                            </svg>
-                        </div>
-                        <div class="chart-legend">
-                            <div class="legend-item"><span class="legend-dot green"></span> Cumplidas: 75</div>
-                            <div class="legend-item"><span class="legend-dot orange"></span> Programadas: 20</div>
-                            <div class="legend-item"><span class="legend-dot red"></span> No Cumplidas: 5</div>
-                        </div>
-                    </div>
-
-                    <!-- Chart 2: Mantenimientos -->
-                    <div class="chart-card">
-                        <h4>Cumplimiento Mantenimientos</h4>
-                        <div class="chart-wrapper">
-                            <svg class="donut-chart" viewBox="0 0 200 200" data-completed="72" data-pending="23" data-not-completed="5">
-                                <circle class="donut-segment bg" cx="100" cy="100" r="80" fill="none" stroke="#e5e7eb" stroke-width="40"></circle>
-                                <circle class="donut-segment green-segment" cx="100" cy="100" r="80" fill="none" stroke="#10b981" stroke-width="40"
-                                    stroke-dasharray="0 502.4"
-                                    stroke-dashoffset="125.6"
-                                    transform="rotate(-90 100 100)"></circle>
-                                <circle class="donut-segment orange-segment" cx="100" cy="100" r="80" fill="none" stroke="#f59e0b" stroke-width="40"
-                                    stroke-dasharray="0 502.4"
-                                    stroke-dashoffset="125.6"
-                                    transform="rotate(-90 100 100)"></circle>
-                                <circle class="donut-segment red-segment" cx="100" cy="100" r="80" fill="none" stroke="#ef4444" stroke-width="40"
-                                    stroke-dasharray="0 502.4"
-                                    stroke-dashoffset="125.6"
-                                    transform="rotate(-90 100 100)"></circle>
-                                <text x="100" y="95" text-anchor="middle" font-size="32" font-weight="bold" fill="#374151">72%</text>
-                                <text x="100" y="115" text-anchor="middle" font-size="14" fill="#6b7280">Cumplidos</text>
-                            </svg>
-                        </div>
-                        <div class="chart-legend">
-                            <div class="legend-item"><span class="legend-dot green"></span> Cumplidos: 72</div>
-                            <div class="legend-item"><span class="legend-dot orange"></span> Programados: 23</div>
-                            <div class="legend-item"><span class="legend-dot red"></span> No Cumplidos: 5</div>
-                        </div>
-                    </div>
-
-                    <!-- Chart 3: Comprobaciones -->
-                    <div class="chart-card">
-                        <h4>Cumplimiento Comprobaciones</h4>
-                        <div class="chart-wrapper">
-                            <svg class="donut-chart" viewBox="0 0 200 200" data-completed="78" data-pending="18" data-not-completed="4">
-                                <circle class="donut-segment bg" cx="100" cy="100" r="80" fill="none" stroke="#e5e7eb" stroke-width="40"></circle>
-                                <circle class="donut-segment green-segment" cx="100" cy="100" r="80" fill="none" stroke="#10b981" stroke-width="40"
-                                    stroke-dasharray="0 502.4"
-                                    stroke-dashoffset="125.6"
-                                    transform="rotate(-90 100 100)"></circle>
-                                <circle class="donut-segment orange-segment" cx="100" cy="100" r="80" fill="none" stroke="#f59e0b" stroke-width="40"
-                                    stroke-dasharray="0 502.4"
-                                    stroke-dashoffset="125.6"
-                                    transform="rotate(-90 100 100)"></circle>
-                                <circle class="donut-segment red-segment" cx="100" cy="100" r="80" fill="none" stroke="#ef4444" stroke-width="40"
-                                    stroke-dasharray="0 502.4"
-                                    stroke-dashoffset="125.6"
-                                    transform="rotate(-90 100 100)"></circle>
-                                <text x="100" y="95" text-anchor="middle" font-size="32" font-weight="bold" fill="#374151">78%</text>
-                                <text x="100" y="115" text-anchor="middle" font-size="14" fill="#6b7280">Cumplidas</text>
-                            </svg>
-                        </div>
-                        <div class="chart-legend">
-                            <div class="legend-item"><span class="legend-dot green"></span> Cumplidas: 78</div>
-                            <div class="legend-item"><span class="legend-dot orange"></span> Programadas: 18</div>
-                            <div class="legend-item"><span class="legend-dot red"></span> No Cumplidas: 4</div>
-                        </div>
-                    </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">💡</div>
+                    <h4 style="color: #0A2463; font-size: 1rem; font-weight: 700;">RETILAP</h4>
+                    <p style="color: #6B7280; font-size: 0.85rem; margin: 0;">Iluminación</p>
                 </div>
-
-                <div class="dashboard-note">
-                    <p><strong>Nota técnica:</strong> Visualización interactiva del panel de control. Las métricas se actualizan al desplazar la página. Los datos corresponden a casos reales de implementación en organismos de inspección acreditados ISO/IEC 17020.</p>
+                <div style="background: white; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">📡</div>
+                    <h4 style="color: #0A2463; font-size: 1rem; font-weight: 700;">RITEL</h4>
+                    <p style="color: #6B7280; font-size: 0.85rem; margin: 0;">Telecomunicaciones</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🏗️</div>
+                    <h4 style="color: #0A2463; font-size: 1rem; font-weight: 700;">Grúas y Carga</h4>
+                    <p style="color: #6B7280; font-size: 0.85rem; margin: 0;">Equipos de Izaje</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🔬</div>
+                    <h4 style="color: #0A2463; font-size: 1rem; font-weight: 700;">Partículas Magnéticas</h4>
+                    <p style="color: #6B7280; font-size: 0.85rem; margin: 0;">Ensayos No Destructivos</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🔥</div>
+                    <h4 style="color: #0A2463; font-size: 1rem; font-weight: 700;">Gas</h4>
+                    <p style="color: #6B7280; font-size: 0.85rem; margin: 0;">Instalaciones de Gas</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🏢</div>
+                    <h4 style="color: #0A2463; font-size: 1rem; font-weight: 700;">Transporte Vertical</h4>
+                    <p style="color: #6B7280; font-size: 0.85rem; margin: 0;">Ascensores y Escaleras</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Visual Showcase Section -->
-    <section class="showcase">
+    <!-- Prueba Social (Sin nombres) -->
+    <section style="padding: 80px 0; background: white;">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Funcionalidades de la Plataforma</h2>
-                <p class="section-subtitle">Ejemplos reales de la interfaz SAM en producción</p>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; font-weight: 800; color: #0A2463; margin-bottom: 1rem;">Resultados que Hablan por Sí Mismos</h2>
+                <p style="font-size: 1.2rem; color: #4B5563;">Sin mencionar nombres, nuestros números demuestran experiencia</p>
             </div>
-
-            <!-- Hoja de Vida Digital -->
-            <div class="feature-showcase">
-                <div class="feature-header">
-                    <h3>Hoja de Vida Digital Completa</h3>
-                    <p>Historial trazable de todas las actividades metrológicas realizadas a cada equipo</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #0A2463 0%, #1E3A8A 100%); border-radius: 16px; color: white;">
+                    <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">7</div>
+                    <div style="font-size: 1.1rem; opacity: 0.95;">Organismos de Inspección</div>
+                    <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">Activos actualmente</div>
                 </div>
-                <div class="equipment-record-simulator">
-                    <!-- Encabezado del Equipo -->
-                    <div class="record-header-simple">
-                        <div class="record-title-section">
-                            <h4>Detalle del Equipo: Balanza Analítica AND GR-202 (BAL-001)</h4>
-                        </div>
-                    </div>
-
-                    <!-- Información del Equipo en Cards -->
-                    <div class="record-info-grid">
-                        <div class="info-card">
-                            <h5>Información General</h5>
-                            <div class="info-list">
-                                <p><strong>Código Interno:</strong> BAL-001</p>
-                                <p><strong>Nombre:</strong> Balanza Analítica AND GR-202</p>
-                                <p><strong>Marca:</strong> AND</p>
-                                <p><strong>Modelo:</strong> GR-202</p>
-                                <p><strong>Nº Serie:</strong> 8234567</p>
-                                <p><strong>Ubicación:</strong> Laboratorio Principal</p>
-                                <p><strong>Responsable:</strong> Juan Pérez</p>
-                                <p><strong>Estado:</strong> <span class="badge-active">Activo</span></p>
-                            </div>
-                        </div>
-
-                        <div class="info-card">
-                            <h5>Especificaciones Técnicas</h5>
-                            <div class="info-list">
-                                <p><strong>Rango de Medida:</strong> 0 g - 220 g</p>
-                                <p><strong>Resolución:</strong> 0.0001 g</p>
-                                <p><strong>Error Máximo Permisible:</strong> ±0.0002 g</p>
-                            </div>
-                        </div>
-
-                        <div class="info-card">
-                            <h5>Próximas Actividades</h5>
-                            <div class="info-list">
-                                <p><strong>Próxima Calibración:</strong> <span class="date-normal">15 Ene 2026</span></p>
-                                <p><strong>Frecuencia Calibración:</strong> 12 meses</p>
-                                <p><strong>Próximo Mantenimiento:</strong> <span class="date-normal">10 May 2025</span></p>
-                                <p><strong>Frecuencia Mantenimiento:</strong> 6 meses</p>
-                                <p><strong>Próxima Comprobación:</strong> <span class="date-normal">20 Feb 2025</span></p>
-                                <p><strong>Frecuencia Comprobación:</strong> 6 meses</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Historial de Calibraciones -->
-                    <div class="record-section">
-                        <h4 class="section-title-history">Historial de Calibraciones</h4>
-                        <div class="table-responsive">
-                            <table class="history-table">
-                                <thead>
-                                    <tr>
-                                        <th>Fecha Calibración</th>
-                                        <th>Proveedor</th>
-                                        <th>Resultado</th>
-                                        <th>Nº Certificado</th>
-                                        <th>Próxima Actividad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>15 Ene 2025</td>
-                                        <td>Metrología Andina S.A.S</td>
-                                        <td><span class="badge-conforme">Conforme</span></td>
-                                        <td>CAL-2025-001234</td>
-                                        <td>15 Ene 2026</td>
-                                    </tr>
-                                    <tr>
-                                        <td>05 Ene 2024</td>
-                                        <td>Metrología Andina S.A.S</td>
-                                        <td><span class="badge-conforme">Conforme</span></td>
-                                        <td>CAL-2024-008932</td>
-                                        <td>05 Ene 2025</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10 Ene 2023</td>
-                                        <td>Laboratorio Nacional</td>
-                                        <td><span class="badge-conforme">Conforme</span></td>
-                                        <td>CAL-2023-006721</td>
-                                        <td>10 Ene 2024</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!-- Historial de Mantenimientos -->
-                    <div class="record-section">
-                        <h4 class="section-title-history">Historial de Mantenimientos</h4>
-                        <div class="table-responsive">
-                            <table class="history-table">
-                                <thead>
-                                    <tr>
-                                        <th>Fecha Mantenimiento</th>
-                                        <th>Tipo</th>
-                                        <th>Proveedor</th>
-                                        <th>Responsable</th>
-                                        <th>Próxima Actividad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>10 Nov 2024</td>
-                                        <td>Preventivo</td>
-                                        <td>Técnicos SAM</td>
-                                        <td>Juan Pérez</td>
-                                        <td>10 May 2025</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10 May 2024</td>
-                                        <td>Preventivo</td>
-                                        <td>Técnicos SAM</td>
-                                        <td>María García</td>
-                                        <td>10 Nov 2024</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15 Mar 2024</td>
-                                        <td>Correctivo</td>
-                                        <td>AND Colombia</td>
-                                        <td>Soporte AND</td>
-                                        <td>N/A</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!-- Historial de Comprobaciones -->
-                    <div class="record-section">
-                        <h4 class="section-title-history">Historial de Comprobaciones</h4>
-                        <div class="table-responsive">
-                            <table class="history-table">
-                                <thead>
-                                    <tr>
-                                        <th>Fecha Comprobación</th>
-                                        <th>Responsable</th>
-                                        <th>Resultado</th>
-                                        <th>Próxima Actividad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>20 Ago 2024</td>
-                                        <td>Juan Pérez</td>
-                                        <td><span class="badge-conforme">Conforme</span></td>
-                                        <td>20 Feb 2025</td>
-                                    </tr>
-                                    <tr>
-                                        <td>20 Feb 2024</td>
-                                        <td>María García</td>
-                                        <td><span class="badge-conforme">Conforme</span></td>
-                                        <td>20 Ago 2024</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15 Ago 2023</td>
-                                        <td>Juan Pérez</td>
-                                        <td><span class="badge-conforme">Conforme</span></td>
-                                        <td>15 Feb 2024</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #059669 0%, #047857 100%); border-radius: 16px; color: white;">
+                    <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">3</div>
+                    <div style="font-size: 1.1rem; opacity: 0.95;">Acreditaciones ONAC</div>
+                    <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">Logradas exitosamente</div>
                 </div>
-            </div>
-
-            <!-- Gráficas de Seguimiento -->
-            <div class="feature-showcase">
-                <div class="feature-header">
-                    <h3>Seguimiento y Análisis de Tendencias</h3>
-                    <p>Gráficas de líneas comparando actividades programadas vs realizadas mes a mes</p>
+                <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #C5A572 0%, #D4AF37 100%); border-radius: 16px; color: white;">
+                    <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">8</div>
+                    <div style="font-size: 1.1rem; opacity: 0.95;">Años de Experiencia</div>
+                    <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">En organismo acreditado ONAC</div>
                 </div>
-                <div class="chart-simulator">
-                    <div class="chart-controls">
-                        <div class="chart-legend-inline">
-                            <div class="legend-item"><span class="legend-line programadas"></span> Programadas</div>
-                            <div class="legend-item"><span class="legend-line realizadas"></span> Realizadas</div>
-                        </div>
-                        <div class="chart-period">Período: Mar 2025 - Mar 2026</div>
-                    </div>
-
-                    <svg class="line-chart" viewBox="0 0 1000 400" id="lineChart">
-                        <!-- Grid lines -->
-                        <g class="grid">
-                            <line x1="80" y1="40" x2="80" y2="320" stroke="#e5e7eb" stroke-width="2"/>
-                            <line x1="80" y1="320" x2="960" y2="320" stroke="#e5e7eb" stroke-width="2"/>
-                            <!-- Horizontal grid lines -->
-                            <line x1="80" y1="40" x2="960" y2="40" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
-                            <line x1="80" y1="110" x2="960" y2="110" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
-                            <line x1="80" y1="180" x2="960" y2="180" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
-                            <line x1="80" y1="250" x2="960" y2="250" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
-                        </g>
-
-                        <!-- Y-axis labels -->
-                        <g class="y-axis-labels" font-size="12" fill="#6b7280">
-                            <text x="70" y="45" text-anchor="end">20</text>
-                            <text x="70" y="115" text-anchor="end">15</text>
-                            <text x="70" y="185" text-anchor="end">10</text>
-                            <text x="70" y="255" text-anchor="end">5</text>
-                            <text x="70" y="325" text-anchor="end">0</text>
-                        </g>
-
-                        <!-- X-axis labels -->
-                        <g class="x-axis-labels" font-size="11" fill="#6b7280">
-                            <text x="147" y="345" text-anchor="middle">Mar</text>
-                            <text x="215" y="345" text-anchor="middle">Abr</text>
-                            <text x="283" y="345" text-anchor="middle">May</text>
-                            <text x="351" y="345" text-anchor="middle">Jun</text>
-                            <text x="419" y="345" text-anchor="middle">Jul</text>
-                            <text x="487" y="345" text-anchor="middle">Ago</text>
-                            <text x="555" y="345" text-anchor="middle">Sep</text>
-                            <text x="623" y="345" text-anchor="middle">Oct</text>
-                            <text x="691" y="345" text-anchor="middle">Nov</text>
-                            <text x="759" y="345" text-anchor="middle">Dic</text>
-                            <text x="827" y="345" text-anchor="middle">Ene</text>
-                            <text x="895" y="345" text-anchor="middle">Feb</text>
-                            <text x="960" y="345" text-anchor="middle">Mar</text>
-                            <text x="520" y="375" text-anchor="middle" font-weight="500" fill="#374151">Mes y Año</text>
-                        </g>
-
-                        <!-- Programadas line (blue) - marzo:10, abril:15, mayo:12, junio:18, julio:14, agosto:16, sept:13, oct:17, nov:15, dic:11, ene:19, feb:16, marzo:20 -->
-                        <polyline
-                            class="chart-line programadas-line"
-                            points="147,250 215,215 283,236 351,194 419,222 487,208 555,229 623,201 691,215 759,243 827,187 895,208 960,180"
-                            fill="none"
-                            stroke="#3b82f6"
-                            stroke-width="3"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-dasharray="1200"
-                            stroke-dashoffset="1200"
-                        />
-
-                        <!-- Realizadas line (green) - marzo:9, abril:16, mayo:12, junio:17, julio:15, agosto:16, sept:14, oct:18, nov:14, dic:12, ene:19, feb:17, marzo:21 -->
-                        <polyline
-                            class="chart-line realizadas-line"
-                            points="147,257 215,208 283,236 351,201 419,215 487,208 555,222 623,194 691,222 759,236 827,187 895,201 960,173"
-                            fill="none"
-                            stroke="#10b981"
-                            stroke-width="3"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-dasharray="1200"
-                            stroke-dashoffset="1200"
-                        />
-
-                        <!-- Data points for Programadas -->
-                        <g class="data-points programadas-points">
-                            <circle cx="147" cy="250" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="215" cy="215" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="283" cy="236" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="351" cy="194" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="419" cy="222" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="487" cy="208" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="555" cy="229" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="623" cy="201" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="691" cy="215" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="759" cy="243" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="827" cy="187" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="895" cy="208" r="5" fill="#3b82f6" opacity="0"/>
-                            <circle cx="960" cy="180" r="5" fill="#3b82f6" opacity="0"/>
-                        </g>
-
-                        <!-- Data points for Realizadas -->
-                        <g class="data-points realizadas-points">
-                            <circle cx="147" cy="257" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="215" cy="208" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="283" cy="236" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="351" cy="201" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="419" cy="215" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="487" cy="208" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="555" cy="222" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="623" cy="194" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="691" cy="222" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="759" cy="236" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="827" cy="187" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="895" cy="201" r="5" fill="#10b981" opacity="0"/>
-                            <circle cx="960" cy="173" r="5" fill="#10b981" opacity="0"/>
-                        </g>
-                    </svg>
+                <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%); border-radius: 16px; color: white;">
+                    <div style="font-size: 3.5rem; font-weight: 900; margin-bottom: 0.5rem;">0</div>
+                    <div style="font-size: 1.1rem; opacity: 0.95;">No Conformidades</div>
+                    <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">En auditorías de seguimiento</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Platform Section -->
-    <section id="plataforma" class="platform">
+    <!-- Por qué SAM es Único -->
+    <section style="padding: 80px 0; background: linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%);">
         <div class="container">
-            <div class="platform-content">
-                <div class="platform-text">
-                    <span class="badge">Plataforma Digital</span>
-                    <h2 class="platform-title">Plataforma SAM: El Software que se Adapta a tu Empresa</h2>
-                    <p class="platform-description">La mayoría de empresas no necesitan un software complejo ni un metrólogo de planta 24/7. SAM ofrece el nivel exacto de control que necesitas.</p>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <div style="display: inline-block; background: linear-gradient(135deg, #C5A572, #D4AF37); color: white; padding: 0.75rem 1.75rem; border-radius: 30px; font-weight: 700; font-size: 0.9rem; margin-bottom: 1.5rem; letter-spacing: 1px;">🏆 ÚNICOS EN COLOMBIA</div>
+                <h2 style="font-size: 2.5rem; font-weight: 800; color: #0A2463; margin-bottom: 1rem;">Por Qué SAM es Diferente</h2>
+                <p style="font-size: 1.2rem; color: #4B5563;">No hay nadie más que ofrezca esto en Colombia</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                <div style="background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); border-top: 4px solid #C5A572;">
+                    <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">💰 Más Económico</h3>
+                    <p style="color: #4B5563; line-height: 1.7;">Un metrólogo de planta cuesta $2.5M-$3M al mes (salario + prestaciones + capacitación). SAM se ajusta a tu presupuesto con servicios modulares.</p>
+                </div>
+                <div style="background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); border-top: 4px solid #059669;">
+                    <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">🎯 100% Flexible</h3>
+                    <p style="color: #4B5563; line-height: 1.7;">Servicios modulares: contrata solo lo que necesitas. Desde solo la plataforma hasta gestión metrológica completa.</p>
+                </div>
+                <div style="background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); border-top: 4px solid #3B82F6;">
+                    <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">📚 Siempre Actualizado</h3>
+                    <p style="color: #4B5563; line-height: 1.7;">Conocemos los últimos requisitos de ONAC, cambios en normas, nuevas exigencias. Tu sistema metrológico siempre conforme.</p>
+                </div>
+                <div style="background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); border-top: 4px solid #0A2463;">
+                    <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">🤝 Nos Involucramos</h3>
+                    <p style="color: #4B5563; line-height: 1.7;">No solo vendemos software. Nos hacemos cargo: buscamos laboratorios, creamos documentos, implementamos procesos. Tú te enfocas en tu negocio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="platform-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h4>Hojas de vida digitales</h4>
-                                <p>Historial completo de calibraciones, mantenimientos y comprobaciones</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h4>Alertas automáticas</h4>
-                                <p>Notificaciones de próximas calibraciones y vencimientos</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h4>Panel de control avanzado</h4>
-                                <p>Indicadores en tiempo real, reportes y estadísticas</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h4>Exportación de datos</h4>
-                                <p>Reportes PDF y Excel listos para auditorías</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h4>Almacenamiento seguro</h4>
-                                <p>Certificados y documentos en la nube (AWS S3)</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h4>Carga masiva</h4>
-                                <p>Importa todos tus equipos en segundos</p>
-                            </div>
-                        </div>
+    <!-- Cómo Funciona -->
+    <section style="padding: 80px 0; background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; font-weight: 800; color: #0A2463; margin-bottom: 1rem;">¿Cómo Funciona SAM?</h2>
+                <p style="font-size: 1.2rem; color: #6B7280; max-width: 700px; margin: 0 auto;">Proceso simple y estructurado para implementar gestión metrológica profesional en tu organización</p>
+            </div>
+
+            <div style="max-width: 1000px; margin: 0 auto; position: relative;">
+                <!-- Línea conectora vertical (solo desktop) -->
+                <div style="position: absolute; left: 50px; top: 60px; bottom: 60px; width: 2px; background: linear-gradient(180deg, #E5E7EB 0%, #E5E7EB 100%); z-index: 0;"></div>
+
+                <!-- Paso 1 -->
+                <div style="display: flex; gap: 2rem; margin-bottom: 3rem; position: relative; z-index: 1;">
+                    <div style="flex-shrink: 0; width: 100px; height: 100px; background: linear-gradient(135deg, #0A2463 0%, #1E3A8A 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(10, 36, 99, 0.2);">
+                        <span style="font-size: 2.5rem; font-weight: 900; color: white;">1</span>
                     </div>
-
-                    <div class="platform-cta">
-                        <a href="https://app.sammetrologia.com/core/login/" class="btn btn-primary">Acceder a la Plataforma</a>
-                        <a href="#contacto" class="btn btn-secondary">Solicitar Demostración</a>
-                        <span class="cta-note">Primer mes sin costo | Sin compromiso | Implementación inmediata</span>
+                    <div style="flex: 1; background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #0A2463; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);">
+                        <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Reunión Inicial</h3>
+                        <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1rem;">Nos reunimos para entender tu situación: equipos, procesos actuales, necesidades específicas y requisitos normativos. Te presentamos nuestros servicios y opciones (con o sin plataforma).</p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <span style="background: #F3F4F6; color: #374151; padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">✓ Sin costo ni compromiso</span>
+                            <span style="background: #F3F4F6; color: #374151; padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">✓ 30-45 minutos</span>
+                        </div>
                     </div>
                 </div>
-                <div class="platform-visual">
-                    <div class="platform-mockup">
-                        <div class="mockup-header">
-                            <div class="mockup-dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
+
+                <!-- Paso 2 -->
+                <div style="display: flex; gap: 2rem; margin-bottom: 3rem; position: relative; z-index: 1;">
+                    <div style="flex-shrink: 0; width: 100px; height: 100px; background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);">
+                        <span style="font-size: 2.5rem; font-weight: 900; color: white;">2</span>
+                    </div>
+                    <div style="flex: 1; background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #3B82F6; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);">
+                        <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Propuesta Adaptada a Ti</h3>
+                        <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1rem;">Diseñamos una solución que se adapta a TUS procesos y formatos existentes. Puede incluir plataforma o solo servicios metrológicos. Tú decides qué necesitas, nosotros nos acomodamos.</p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <span style="background: #F3F4F6; color: #374151; padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">✓ Con o sin plataforma</span>
+                            <span style="background: #F3F4F6; color: #374151; padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">✓ Precios claros</span>
                         </div>
-                        <div class="mockup-content">
-                            <div class="mockup-sidebar">
-                                <div class="mockup-menu-item active"></div>
-                                <div class="mockup-menu-item"></div>
-                                <div class="mockup-menu-item"></div>
-                                <div class="mockup-menu-item"></div>
-                            </div>
-                            <div class="mockup-main">
-                                <div class="mockup-card"></div>
-                                <div class="mockup-card"></div>
-                                <div class="mockup-card"></div>
-                            </div>
+                    </div>
+                </div>
+
+                <!-- Paso 3 -->
+                <div style="display: flex; gap: 2rem; margin-bottom: 3rem; position: relative; z-index: 1;">
+                    <div style="flex-shrink: 0; width: 100px; height: 100px; background: linear-gradient(135deg, #6B7280 0%, #4B5563 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(107, 114, 128, 0.2);">
+                        <span style="font-size: 2.5rem; font-weight: 900; color: white;">3</span>
+                    </div>
+                    <div style="flex: 1; background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #6B7280; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);">
+                        <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Implementación Flexible</h3>
+                        <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1rem;">Si eliges la plataforma: trial de 30 días para probar. Si prefieres solo servicios: implementación directa usando tus formatos y procesos. Nos adaptamos a tu forma de trabajo.</p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <span style="background: #F3F4F6; color: #374151; padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">✓ Usamos TUS formatos</span>
+                            <span style="background: #F3F4F6; color: #374151; padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">✓ Trial si quieres plataforma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 4 -->
+                <div style="display: flex; gap: 2rem; position: relative; z-index: 1;">
+                    <div style="flex-shrink: 0; width: 100px; height: 100px; background: linear-gradient(135deg, #059669 0%, #047857 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(5, 150, 105, 0.2);">
+                        <span style="font-size: 2.5rem; font-weight: 900; color: white;">4</span>
+                    </div>
+                    <div style="flex: 1; background: white; padding: 2rem; border-radius: 12px; border-left: 4px solid #059669; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);">
+                        <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 0.75rem; font-weight: 700;">Soporte Continuo</h3>
+                        <p style="color: #4B5563; line-height: 1.7; margin-bottom: 1rem;">Acompañamiento permanente: actualizaciones normativas, mejoras en la plataforma, asesoría técnica y soporte cuando lo necesites.</p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <span style="background: #F3F4F6; color: #374151; padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">✓ Siempre actualizado</span>
+                            <span style="background: #F3F4F6; color: #374151; padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">✓ Respuesta rápida</span>
                         </div>
                     </div>
                 </div>
@@ -804,232 +447,80 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="nosotros" class="about">
+    <!-- Preguntas Frecuentes (FAQ) -->
+    <section style="padding: 80px 0; background: white;">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <span class="badge">Quiénes Somos</span>
-                    <h2 class="section-title">SAM Metrología S.A.S</h2>
-                    <p class="about-intro">Empresa especializada en gestión integral de procesos metrológicos, enfocada en brindar soluciones innovadoras para organismos de inspección acreditados bajo ISO/IEC 17020 y organizaciones que dependen de la precisión en sus equipos de medición.</p>
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; font-weight: 800; color: #0A2463; margin-bottom: 1rem;">Preguntas Frecuentes</h2>
+                <p style="font-size: 1.2rem; color: #6B7280;">Respuestas claras a las dudas más comunes sobre SAM Metrología</p>
+            </div>
 
-                    <div class="about-blocks">
-                        <div class="about-block">
-                            <h3>Misión</h3>
-                            <p>Impulsamos la confiabilidad y eficiencia de los procesos industriales y de inspección, ofreciendo soluciones integrales que combinan tecnología, conocimiento técnico y gestión digital. Garantizamos equipos controlados, trazables y conformes a las normas mediante nuestra plataforma SAM y servicios especializados.</p>
-                        </div>
-                        <div class="about-block">
-                            <h3>Visión 2030</h3>
-                            <p>Ser reconocidos en Latinoamérica como líderes en innovación metrológica digital, consolidando SAM como herramienta esencial para el control técnico, trazabilidad y sostenibilidad de los sistemas de medición en industrias, laboratorios y organismos de inspección.</p>
-                        </div>
-                    </div>
-
-                    <div class="values">
-                        <h3>Valores Corporativos</h3>
-                        <div class="values-grid">
-                            <div class="value-item">
-                                <strong>Confiabilidad</strong>
-                                <span>Precisión y validez en la información metrológica</span>
-                            </div>
-                            <div class="value-item">
-                                <strong>Innovación</strong>
-                                <span>Tecnología que transforma la gestión metrológica</span>
-                            </div>
-                            <div class="value-item">
-                                <strong>Trazabilidad</strong>
-                                <span>Control y seguimiento continuo en cada servicio</span>
-                            </div>
-                            <div class="value-item">
-                                <strong>Transparencia</strong>
-                                <span>Ética y comunicación clara con nuestros clientes</span>
-                            </div>
-                            <div class="value-item">
-                                <strong>Compromiso técnico</strong>
-                                <span>Conocimiento metrológico y normativo especializado</span>
-                            </div>
-                        </div>
-                    </div>
+            <div style="max-width: 900px; margin: 0 auto; display: grid; gap: 1.5rem;">
+                <!-- Pregunta 1 -->
+                <div style="background: #F9FAFB; border-left: 4px solid #0A2463; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                    <h3 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">¿Cuánto tiempo toma implementar SAM?</h3>
+                    <p style="color: #4B5563; line-height: 1.7; margin: 0;">Entre 2 y 5 días hábiles dependiendo de la cantidad de equipos y servicios contratados. Incluye configuración de la plataforma, carga de información y capacitación de tu equipo.</p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <span class="stat-number">9</span>
-                        <span class="stat-label">Años de experiencia en metrología</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Cobertura nacional en Colombia</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Plataforma disponible</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">30 días</span>
-                        <span class="stat-label">Trial gratuito</span>
-                    </div>
+
+                <!-- Pregunta 2 -->
+                <div style="background: #F9FAFB; border-left: 4px solid #3B82F6; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                    <h3 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">¿Funciona para empresas pequeñas o solo para grandes organismos?</h3>
+                    <p style="color: #4B5563; line-height: 1.7; margin: 0;">SAM es completamente escalable. Funciona desde 5 equipos hasta más de 500. Los servicios son modulares: contratas solo lo que necesitas. Tenemos clientes desde pequeños talleres hasta grandes organismos de inspección.</p>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div style="background: #F9FAFB; border-left: 4px solid #6B7280; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                    <h3 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">¿Necesito conocimientos técnicos en metrología para usar SAM?</h3>
+                    <p style="color: #4B5563; line-height: 1.7; margin: 0;">No necesariamente. La plataforma es intuitiva y viene con capacitación incluida. Además, nuestro servicio incluye el acompañamiento técnico de expertos en metrología, así que no necesitas ser experto para tener un sistema profesional.</p>
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div style="background: #F9FAFB; border-left: 4px solid #059669; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                    <h3 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">¿Qué pasa si ya tengo un metrólogo interno?</h3>
+                    <p style="color: #4B5563; line-height: 1.7; margin: 0;">Perfecto, SAM potencia su trabajo. La plataforma automatiza tareas repetitivas (formatos, alertas, reportes) para que tu metrólogo se enfoque en actividades de mayor valor. Es una herramienta complementaria, no un reemplazo.</p>
+                </div>
+
+                <!-- Pregunta 5 -->
+                <div style="background: #F9FAFB; border-left: 4px solid #0A2463; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                    <h3 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">¿Los formatos y procedimientos cumplen con requisitos de ONAC?</h3>
+                    <p style="color: #4B5563; line-height: 1.7; margin: 0;">Sí, 100%. Todos los formatos están diseñados siguiendo ISO/IEC 17020, ILAC G8, ILAC G-24 y demás normas aplicables. Fueron creados por profesionales con experiencia real en organismos acreditados que han pasado auditorías ONAC exitosamente.</p>
+                </div>
+
+                <!-- Pregunta 6 -->
+                <div style="background: #F9FAFB; border-left: 4px solid #3B82F6; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                    <h3 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">¿Puedo seguir usando mis propios formatos?</h3>
+                    <p style="color: #4B5563; line-height: 1.7; margin: 0;">Sí, totalmente. Puedes usar exclusivamente los formatos de SAM, solo tus formatos propios, o una combinación de ambos. La plataforma es flexible y se adapta a tu sistema documental existente.</p>
+                </div>
+
+                <!-- Pregunta 7 -->
+                <div style="background: #F9FAFB; border-left: 4px solid #6B7280; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                    <h3 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">¿Cómo funciona el soporte técnico?</h3>
+                    <p style="color: #4B5563; line-height: 1.7; margin: 0;">Soporte continuo por WhatsApp, email y videollamadas cuando sea necesario. Tiempos de respuesta rápidos (usualmente mismo día). Además, actualizaciones automáticas de la plataforma y notificaciones de cambios normativos.</p>
+                </div>
+
+                <!-- Pregunta 8 -->
+                <div style="background: #F9FAFB; border-left: 4px solid #059669; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);">
+                    <h3 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 1rem; font-weight: 700;">¿Es realmente más económico que contratar un metrólogo?</h3>
+                    <p style="color: #4B5563; line-height: 1.7; margin: 0;">Sí. Un metrólogo de planta cuesta entre $2.500.000-$3.000.000/mes (salario + prestaciones + capacitación continua). SAM ofrece servicios modulares por suscripción mensual mucho menor, incluye plataforma, formatos profesionales, soporte de expertos y se ajusta a tu presupuesto.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Compliance Section -->
-    <section class="compliance">
+    <!-- Call to Action Final -->
+    <section class="cta-final">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Cumplimiento Normativo</h2>
-                <p class="section-subtitle">Nuestra plataforma y servicios están alineados con las principales normativas internacionales de metrología y acreditación</p>
-            </div>
-            <div class="compliance-grid">
-                <div class="compliance-card">
-                    <div class="compliance-badge">ISO/IEC 17020</div>
-                    <h3>Organismos de Inspección</h3>
-                    <p>Evaluación de la conformidad. Requisitos para el funcionamiento de diferentes tipos de organismos que realizan la inspección. Versión 2012.</p>
+            <div class="cta-content">
+                <h2>Comienza a Optimizar tu Gestión Metrológica Hoy</h2>
+                <p>Prueba SAM Metrología gratis por 30 días. Sin tarjeta de crédito. Sin compromiso.</p>
+                <div class="cta-buttons">
+                    <a href="contacto.html" class="btn btn-primary-large">Solicitar Trial Gratuito</a>
+                    <a href="plataforma.html" class="btn btn-secondary-large">Conocer la Plataforma</a>
                 </div>
-                <div class="compliance-card">
-                    <div class="compliance-badge">ILAC-G24:2022 / OIML D 10:2022</div>
-                    <h3>Intervalos de Recalibración</h3>
-                    <p>Guía para la determinación de intervalos de recalibración de equipos de medición. Publicación conjunta ILAC-G24:2022 / OIML D 10:2022 (Edición 2022).</p>
-                </div>
-                <div class="compliance-card">
-                    <div class="compliance-badge">ILAC-G8</div>
-                    <h3>Declaraciones de Conformidad</h3>
-                    <p>Guía sobre reglas de decisión y declaraciones de conformidad en evaluación de conformidad. Versión 09/2019.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Differentiators Section -->
-    <section class="differentiators">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">¿Qué nos hace diferentes?</h2>
-                <p class="section-subtitle">No todas las empresas necesitan un metrólogo de planta o un sistema complejo las 24 horas</p>
-            </div>
-            <div class="diff-grid">
-                <div class="diff-card">
-                    <div class="diff-number">01</div>
-                    <h3>Más Económico</h3>
-                    <p>Gestión metrológica completa por suscripción mensual. Mucho más accesible que contratar un metrólogo interno de tiempo completo.</p>
-                </div>
-                <div class="diff-card">
-                    <div class="diff-number">02</div>
-                    <h3>Flexible y Escalable</h3>
-                    <p>Servicios modulares según necesidad. Desde gestión completa hasta tareas específicas como actualización de formatos o comprobaciones.</p>
-                </div>
-                <div class="diff-card">
-                    <div class="diff-number">03</div>
-                    <h3>Nivel Intermedio Perfecto</h3>
-                    <p>Los software avanzados son muy complejos para lo que realmente necesitas. SAM ofrece exactamente lo que tu empresa requiere, sin complicaciones.</p>
-                </div>
-                <div class="diff-card">
-                    <div class="diff-number">04</div>
-                    <h3>Tecnología + Experiencia</h3>
-                    <p>Combinamos 9 años de experiencia en metrología con una plataforma digital moderna y fácil de usar.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h2>Hablemos de tu Proyecto</h2>
-                    <p>Estamos listos para ayudarte a optimizar la gestión metrológica de tu organización.</p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:metrologiasam@gmail.com">metrologiasam@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>WhatsApp</h4>
-                                <a href="https://wa.me/573247990534" target="_blank">+57 324 799 0534</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Cobertura</h4>
-                                <p>Todo Colombia</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact-cta">
-                        <a href="https://wa.me/573247990534?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20SAM%20Metrolog%C3%ADa" target="_blank" class="btn btn-whatsapp">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                            </svg>
-                            Escribir por WhatsApp
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/metrologiasam@gmail.com" method="POST">
-                        <!-- FormSubmit Configuration -->
-                        <input type="hidden" name="_subject" value="Nuevo contacto desde SAM Metrología - Web">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="https://sammetrologia.com/#contacto">
-
-                        <div class="form-group">
-                            <label for="nombre">Nombre completo</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="empresa">Empresa</label>
-                            <input type="text" id="empresa" name="empresa" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="servicio">Servicio de interés</label>
-                            <select id="servicio" name="servicio" required>
-                                <option value="">Selecciona un servicio</option>
-                                <option value="Plataforma SAM">Plataforma SAM</option>
-                                <option value="Gestión por Suscripción">Gestión por Suscripción</option>
-                                <option value="Comprobaciones Intermedias">Comprobaciones Intermedias</option>
-                                <option value="Logística de Calibración">Logística de Calibración</option>
-                                <option value="Gestión Documental">Gestión Documental</option>
-                                <option value="Acompañamiento Técnico">Acompañamiento Técnico</option>
-                                <option value="Otro">Otro</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
-                    </form>
+                <div class="cta-benefits">
+                    <span>✓ Implementación inmediata</span>
+                    <span>✓ Capacitación incluida</span>
+                    <span>✓ Soporte técnico</span>
                 </div>
             </div>
         </div>
@@ -1047,11 +538,11 @@
                 <div class="footer-links">
                     <h4>Enlaces</h4>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#plataforma">Plataforma SAM</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="plataforma.html">Plataforma SAM</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                         <li><a href="https://app.sammetrologia.com/core/login/" target="_blank"><strong>Iniciar Sesión</strong></a></li>
                     </ul>
                 </div>

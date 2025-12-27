@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plataforma SAM | SAM Metrología</title>
+    <meta name="description" content="Plataforma SAM: Software en la nube para gestión metrológica profesional. Dashboard interactivo, alertas automáticas y trazabilidad completa.">
+
+    <link rel="canonical" href="https://sammetrologia.com/plataforma.html">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon-option1.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="SAM Metrología">
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="plataforma.html" class="nav-link active">Plataforma SAM</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="https://app.sammetrologia.com/core/login/" class="nav-link">Iniciar Sesión</a></li>
+                    <li><a href="contacto.html" class="nav-link btn-contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN 1: HERO - Elegante y Moderno -->
+    <section class="page-header" style="padding: 120px 0 100px 0; background: linear-gradient(135deg, #0A2463 0%, #1e40af 100%);">
+        <div class="container">
+            <div style="max-width: 950px; margin: 0 auto; text-align: center;">
+                <h1 style="font-size: 3.8rem; line-height: 1.15; margin-bottom: 1.5rem; color: white; font-weight: 800; letter-spacing: -0.5px;">La Plataforma Metrológica Más Completa de Colombia</h1>
+                <p style="font-size: 1.5rem; opacity: 0.95; max-width: 750px; margin: 0 auto 3.5rem auto; color: #e0e7ff; font-weight: 400;">4 Formatos Profesionales + Control Automático + Trazabilidad Total</p>
+            </div>
+
+            <!-- Stats Cards - Elegantes con fondo blanco -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; max-width: 950px; margin: 0 auto 3.5rem auto;">
+                <div style="background: white; padding: 3rem 2rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); text-align: center; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 25px 70px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 20px 60px rgba(0, 0, 0, 0.15)'">
+                    <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #3B82F6, #1E40AF); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; box-shadow: 0 8px 25px rgba(197, 165, 114, 0.3);">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                    </div>
+                    <div style="font-size: 4rem; font-weight: 900; color: #0A2463; margin-bottom: 0.75rem; line-height: 1; background: linear-gradient(135deg, #0A2463, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">4</div>
+                    <div style="font-size: 0.95rem; font-weight: 700; color: #6B7280; text-transform: uppercase; letter-spacing: 1px;">Formatos Incluidos</div>
+                </div>
+
+                <div style="background: white; padding: 3rem 2rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); text-align: center; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 25px 70px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 20px 60px rgba(0, 0, 0, 0.15)'">
+                    <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #0A2463, #10b981); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; box-shadow: 0 8px 25px rgba(5, 150, 105, 0.3);">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                    </div>
+                    <div style="font-size: 4rem; font-weight: 900; color: #0A2463; margin-bottom: 0.75rem; line-height: 1;">24/7</div>
+                    <div style="font-size: 0.95rem; font-weight: 700; color: #6B7280; text-transform: uppercase; letter-spacing: 1px;">Dashboard Tiempo Real</div>
+                </div>
+
+                <div style="background: white; padding: 3rem 2rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); text-align: center; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 25px 70px rgba(0, 0, 0, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 20px 60px rgba(0, 0, 0, 0.15)'">
+                    <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #3b82f6, #1e40af); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <div style="font-size: 4rem; font-weight: 900; color: #0A2463; margin-bottom: 0.75rem; line-height: 1;">100%</div>
+                    <div style="font-size: 0.95rem; font-weight: 700; color: #6B7280; text-transform: uppercase; letter-spacing: 1px;">Trazable</div>
+                </div>
+            </div>
+
+            <!-- Botones CTA - Más elegantes -->
+            <div style="display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap;">
+                <a href="contacto.html" style="background: #3B82F6; color: white; padding: 1.25rem 3rem; font-size: 1.15rem; border-radius: 12px; font-weight: 700; text-decoration: none; transition: all 0.3s ease; display: inline-block; box-shadow: 0 8px 25px rgba(197, 165, 114, 0.4);" onmouseover="this.style.background='#1E40AF'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 35px rgba(197, 165, 114, 0.5)'" onmouseout="this.style.background='#3B82F6'; this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(197, 165, 114, 0.4)'">Agendar Reunión</a>
+                <a href="#formatos" style="background: white; color: #0A2463; padding: 1.25rem 3rem; font-size: 1.15rem; border-radius: 12px; font-weight: 700; text-decoration: none; transition: all 0.3s ease; display: inline-block; box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);" onmouseover="this.style.background='#f3f4f6'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 35px rgba(255, 255, 255, 0.4)'" onmouseout="this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(255, 255, 255, 0.3)'">Ver Formatos</a>
+                <a href="https://app.sammetrologia.com/core/login/" style="background: rgba(255, 255, 255, 0.15); color: white; padding: 1.25rem 3rem; font-size: 1.15rem; border-radius: 12px; font-weight: 700; text-decoration: none; transition: all 0.3s ease; display: inline-block; border: 2px solid rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px);" onmouseover="this.style.background='rgba(255, 255, 255, 0.25)'; this.style.transform='translateY(-2px)'; this.style.borderColor='rgba(255, 255, 255, 0.5)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.15)'; this.style.transform='translateY(0)'; this.style.borderColor='rgba(255, 255, 255, 0.3)'">Iniciar Sesión</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: PROBLEMA → SOLUCIÓN -->
+    <section style="padding: 100px 0; background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 4rem;">
+                <h2 style="font-size: 2.8rem; font-weight: 800; color: #0A2463; text-align: center; margin-bottom: 1rem; letter-spacing: -0.5px;">¿Te Identificas con Alguno de Estos Problemas?</h2>
+                <p style="font-size: 1.3rem; color: #6B7280; text-align: center;">SAM los resuelve todos de forma automática e inteligente</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 3rem; max-width: 1100px; margin-left: auto; margin-right: auto;">
+                <!-- Problema 1 -->
+                <div style="background: white; padding: 2.5rem; border-radius: 12px; border-left: 4px solid #0A2463; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 32px rgba(10, 36, 99, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(0, 0, 0, 0.08)'">
+                    <h3 style="color: #0A2463; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 700;">Documentación te quita 10+ horas/mes</h3>
+                    <p style="color: #6B7280; margin-bottom: 1.5rem; line-height: 1.7;">Llenar formatos manualmente, calcular reglas ILAC G8, hacer gráficas...</p>
+                    <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 1.25rem; border-radius: 8px; border-left: 3px solid #0A2463;">
+                        <strong style="color: #0A2463; font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Solución SAM</strong>
+                        <p style="color: #4B5563; margin: 0; line-height: 1.6;">4 Formatos profesionales que calculan todo automáticamente. PDF listo en minutos.</p>
+                    </div>
+                </div>
+
+                <!-- Problema 2 -->
+                <div style="background: white; padding: 2.5rem; border-radius: 12px; border-left: 4px solid #3B82F6; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 32px rgba(59, 130, 246, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(0, 0, 0, 0.08)'">
+                    <h3 style="color: #0A2463; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 700;">Se te pasan vencimientos de calibración</h3>
+                    <p style="color: #6B7280; margin-bottom: 1.5rem; line-height: 1.7;">Excel desactualizados, recordatorios manuales, equipos vencidos...</p>
+                    <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 1.25rem; border-radius: 8px; border-left: 3px solid #3B82F6;">
+                        <strong style="color: #3B82F6; font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Solución SAM</strong>
+                        <p style="color: #4B5563; margin: 0; line-height: 1.6;">Alertas automáticas 30 días antes. Dashboard te muestra todo en tiempo real.</p>
+                    </div>
+                </div>
+
+                <!-- Problema 3 -->
+                <div style="background: white; padding: 2.5rem; border-radius: 12px; border-left: 4px solid #0A2463; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 32px rgba(10, 36, 99, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(0, 0, 0, 0.08)'">
+                    <h3 style="color: #0A2463; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 700;">Auditorías son caóticas y estresantes</h3>
+                    <p style="color: #6B7280; margin-bottom: 1.5rem; line-height: 1.7;">Carpetas desordenadas, buscar certificados, compilar historial...</p>
+                    <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 1.25rem; border-radius: 8px; border-left: 3px solid #0A2463;">
+                        <strong style="color: #0A2463; font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Solución SAM</strong>
+                        <p style="color: #4B5563; margin: 0; line-height: 1.6;">Hojas de vida digitales con todo el historial. Exporta reportes en 1 clic.</p>
+                    </div>
+                </div>
+
+                <!-- Problema 4 -->
+                <div style="background: white; padding: 2.5rem; border-radius: 12px; border-left: 4px solid #3B82F6; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 32px rgba(59, 130, 246, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(0, 0, 0, 0.08)'">
+                    <h3 style="color: #0A2463; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 700;">No sabes qué equipos necesitan atención</h3>
+                    <p style="color: #6B7280; margin-bottom: 1.5rem; line-height: 1.7;">Sin visibilidad de tendencias, decisiones reactivas, no proactivas...</p>
+                    <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 1.25rem; border-radius: 8px; border-left: 3px solid #3B82F6;">
+                        <strong style="color: #3B82F6; font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Solución SAM</strong>
+                        <p style="color: #4B5563; margin: 0; line-height: 1.6;">Gráficas de análisis de tendencias. Identifica patrones y optimiza frecuencias.</p>
+                    </div>
+                </div>
+
+                <!-- Problema 5 -->
+                <div style="background: white; padding: 2.5rem; border-radius: 12px; border-left: 4px solid #0A2463; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 32px rgba(10, 36, 99, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(0, 0, 0, 0.08)'">
+                    <h3 style="color: #0A2463; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 700;">Tienes 50+ equipos y es un caos</h3>
+                    <p style="color: #6B7280; margin-bottom: 1.5rem; line-height: 1.7;">Gestionar muchos equipos manualmente es imposible...</p>
+                    <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 1.25rem; border-radius: 8px; border-left: 3px solid #0A2463;">
+                        <strong style="color: #0A2463; font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Solución SAM</strong>
+                        <p style="color: #4B5563; margin: 0; line-height: 1.6;">Carga masiva de equipos en minutos. Dashboard centralizado de toda la operación.</p>
+                    </div>
+                </div>
+
+                <!-- Problema 6 -->
+                <div style="background: white; padding: 2.5rem; border-radius: 12px; border-left: 4px solid #3B82F6; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 32px rgba(59, 130, 246, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(0, 0, 0, 0.08)'">
+                    <h3 style="color: #0A2463; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 700;">Metrólogo de planta es muy costoso</h3>
+                    <p style="color: #6B7280; margin-bottom: 1.5rem; line-height: 1.7;">Salario + prestaciones + capacitación continua...</p>
+                    <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 1.25rem; border-radius: 8px; border-left: 3px solid #3B82F6;">
+                        <strong style="color: #3B82F6; font-size: 1.05rem; display: block; margin-bottom: 0.5rem;">Solución SAM</strong>
+                        <p style="color: #4B5563; margin: 0; line-height: 1.6;">Suscripción mensual flexible. Mucho más económico que un metrólogo interno.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: FORMATOS PROFESIONALES -->
+    <section id="formatos" class="smart-formats" style="padding: 100px 0; background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4.5rem;">
+                <div style="display: inline-block; background: linear-gradient(135deg, #0A2463, #1E40AF); color: white; padding: 0.75rem 1.75rem; border-radius: 30px; font-weight: 700; font-size: 0.9rem; margin-bottom: 1.5rem; letter-spacing: 1px; box-shadow: 0 4px 12px rgba(10, 36, 99, 0.25);">LO MÁS VALORADO</div>
+                <h2 style="font-size: 2.8rem; font-weight: 800; color: #0A2463; margin-bottom: 1rem; letter-spacing: -0.5px;">4 Formatos Profesionales que Hacen el Trabajo por Ti</h2>
+                <p style="font-size: 1.3rem; color: #6B7280; max-width: 750px; margin: 0 auto;">Cumplimiento normativo garantizado. Todo lo que necesitas incluido.</p>
+            </div>
+
+            <div class="formats-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px; max-width: 1200px; margin-left: auto; margin-right: auto;">
+                <!-- Formato 1: Sin Formatos -->
+                <div class="format-card">
+                    <div class="format-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <path d="M12 18v-6"></path>
+                            <path d="M9 15h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="format-title">¿No Tienes Formatos Propios?</h3>
+                    <p class="format-intro">La plataforma incluye formatos profesionales listos para usar</p>
+                    <ul class="format-features">
+                        <li><strong>Confirmación Metrológica:</strong> Analiza certificados de calibración con reglas de decisión ILAC G8</li>
+                        <li><strong>Comprobaciones Intermedias:</strong> Verificaciones entre calibraciones con evaluación de conformidad</li>
+                        <li><strong>Mantenimientos:</strong> Listas predefinidas de actividades (preventivo, correctivo, predictivo)</li>
+                        <li><strong>Intervalos de Calibración:</strong> Cálculo automático según ILAC G-24:2022 (4 métodos)</li>
+                    </ul>
+                    <div class="format-badge">
+                        <span>Cumplimiento Normativo</span>
+                        <span>PDFs Profesionales</span>
+                    </div>
+                </div>
+
+                <!-- Formato 2: Usas Nuestros Formatos -->
+                <div class="format-card" style="border: 3px solid #3B82F6; position: relative; box-shadow: 0 12px 32px rgba(59, 130, 246, 0.2);">
+                    <div style="position: absolute; top: 1rem; right: 1rem; background: linear-gradient(135deg, #3B82F6, #1E40AF); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);">RECOMENDADO</div>
+
+                    <div style="text-align: center; padding: 2rem 1rem 1rem 1rem;">
+                        <h3 style="font-size: 1.7rem; font-weight: 800; color: #0A2463; margin: 0 0 0.5rem 0;">
+                            Formatos Profesionales
+                        </h3>
+                        <p style="font-size: 1rem; color: #6B7280; margin: 0 0 1.5rem 0;">
+                            Cumplimiento normativo garantizado
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #0A2463, #1E40AF); padding: 1.25rem; border-radius: 8px; margin-bottom: 1.5rem; text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white;">
+                            4 FORMATOS
+                        </div>
+                        <div style="font-size: 0.95rem; color: white; margin-top: 0.25rem; opacity: 0.95;">
+                            Todo lo que necesitas incluido
+                        </div>
+                    </div>
+
+                    <div style="background: #F9FAFB; padding: 1.25rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <div style="font-size: 0.95rem; color: #0A2463; font-weight: 700; margin-bottom: 0.5rem;">
+                            Confirmación Metrológica
+                        </div>
+                        <div style="font-size: 0.85rem; color: #6B7280;">
+                            Análisis certificados con ILAC G8
+                        </div>
+                    </div>
+
+                    <div style="background: #F9FAFB; padding: 1.25rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <div style="font-size: 0.95rem; color: #0A2463; font-weight: 700; margin-bottom: 0.5rem;">
+                            Intervalos de Calibración
+                        </div>
+                        <div style="font-size: 0.85rem; color: #6B7280;">
+                            Cálculo automático ILAC G-24 (4 métodos)
+                        </div>
+                    </div>
+
+                    <div style="background: #F9FAFB; padding: 1.25rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <div style="font-size: 0.95rem; color: #0A2463; font-weight: 700; margin-bottom: 0.5rem;">
+                            Comprobaciones Intermedias
+                        </div>
+                        <div style="font-size: 0.85rem; color: #6B7280;">
+                            Verificaciones entre calibraciones
+                        </div>
+                    </div>
+
+                    <div style="background: #F9FAFB; padding: 1.25rem; border-radius: 8px; margin-bottom: 1.5rem;">
+                        <div style="font-size: 0.95rem; color: #0A2463; font-weight: 700; margin-bottom: 0.5rem;">
+                            Mantenimientos
+                        </div>
+                        <div style="font-size: 0.85rem; color: #6B7280;">
+                            Preventivo, correctivo y predictivo
+                        </div>
+                    </div>
+
+                    <div style="border-top: 2px solid #E5E7EB; padding-top: 1.25rem; text-align: center;">
+                        <div style="font-size: 0.9rem; color: #3B82F6; font-weight: 700;">
+                            Proceso simple: Selecciona → Ingresas → SAM calcula → PDF listo
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formato 3: Flexibilidad -->
+                <div class="format-card">
+                    <div class="format-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path>
+                            <path d="M21 3v5h-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="format-title">Total Flexibilidad</h3>
+                    <p class="format-intro">No estás obligado a usar nuestros formatos</p>
+                    <ul class="format-features">
+                        <li><strong>Usa tus Propios Formatos:</strong> Puedes seguir usando la documentación de tu empresa sin cambios</li>
+                        <li><strong>Coexistencia:</strong> Sube documentos externos junto con los generados por la plataforma</li>
+                        <li><strong>Personalización:</strong> Códigos de documento, versiones y logos adaptados a tu sistema documental</li>
+                        <li><strong>Sin Dependencia:</strong> Exporta PDFs y Excel para usar fuera de la plataforma cuando quieras</li>
+                    </ul>
+                    <div class="format-badge">
+                        <span>Sin Ataduras</span>
+                        <span>Adaptable 100%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: CONTROL Y ANÁLISIS EN TIEMPO REAL (Dashboard + Tendencias Fusionados) -->
+    <section style="padding: 100px 0; background: #ffffff;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.8rem; font-weight: 800; color: #0A2463; margin-bottom: 1rem; letter-spacing: -0.5px;">Control y Análisis en Tiempo Real</h2>
+                <p style="font-size: 1.3rem; color: #6B7280; max-width: 850px; margin: 0 auto;">Dashboard interactivo + Alertas automáticas + Gráficas de tendencias. Nunca más vencimientos olvidados.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem; align-items: start;">
+                <!-- Columna 1: Dashboard -->
+                <div>
+                    <h3 style="color: #0A2463; font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 700;">Dashboard Interactivo</h3>
+
+                    <!-- Quick Stats -->
+                    <div class="dashboard-stats">
+                        <div class="stat-box">
+                            <div class="stat-icon blue">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="M18 17V9"/>
+                                    <path d="M13 17V5"/>
+                                    <path d="M8 17v-3"/>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-value" data-target="100">0</span>
+                                <span class="stat-label">Equipos Registrados</span>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-icon green">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-value" data-target="75">0</span>
+                                <span class="stat-label">Actividades Cumplidas</span>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-icon orange">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-value" data-target="20">0</span>
+                                <span class="stat-label">En Programación</span>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-icon red">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="12" y1="8" x2="12" y2="12"/>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-value" data-target="5">0</span>
+                                <span class="stat-label">No Cumplidas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #dbeafe; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                        <h4 style="color: #0A2463; margin-bottom: 1rem; font-weight: 700;">Alertas Automáticas</h4>
+                        <ul style="color: #374151; line-height: 1.8;">
+                            <li>Email 30 días antes de vencimiento</li>
+                            <li>Notificaciones en plataforma</li>
+                            <li>Dashboard actualizado en tiempo real</li>
+                            <li>Configura destinatarios por equipo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Gráfica de Tendencias -->
+                <div>
+                    <h3 style="color: #0A2463; font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 700;">Análisis de Tendencias</h3>
+
+                    <div class="chart-simulator">
+                        <div class="chart-controls">
+                            <div class="chart-legend-inline">
+                                <div class="legend-item"><span class="legend-line programadas"></span> Programadas</div>
+                                <div class="legend-item"><span class="legend-line realizadas"></span> Realizadas</div>
+                            </div>
+                            <div class="chart-period">Período: Últimos 12 meses</div>
+                        </div>
+
+                        <svg class="line-chart" viewBox="0 0 1000 400" id="lineChart">
+                            <!-- Grid lines -->
+                            <g class="grid">
+                                <line x1="80" y1="40" x2="80" y2="320" stroke="#e5e7eb" stroke-width="2"/>
+                                <line x1="80" y1="320" x2="960" y2="320" stroke="#e5e7eb" stroke-width="2"/>
+                                <line x1="80" y1="40" x2="960" y2="40" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                                <line x1="80" y1="110" x2="960" y2="110" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                                <line x1="80" y1="180" x2="960" y2="180" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                                <line x1="80" y1="250" x2="960" y2="250" stroke="#f3f4f6" stroke-width="1" stroke-dasharray="5,5"/>
+                            </g>
+
+                            <!-- Y-axis labels -->
+                            <g class="y-axis-labels" font-size="12" fill="#6b7280">
+                                <text x="70" y="45" text-anchor="end">20</text>
+                                <text x="70" y="115" text-anchor="end">15</text>
+                                <text x="70" y="185" text-anchor="end">10</text>
+                                <text x="70" y="255" text-anchor="end">5</text>
+                                <text x="70" y="325" text-anchor="end">0</text>
+                            </g>
+
+                            <!-- X-axis labels -->
+                            <g class="x-axis-labels" font-size="11" fill="#6b7280">
+                                <text x="147" y="345" text-anchor="middle">Mar</text>
+                                <text x="215" y="345" text-anchor="middle">Abr</text>
+                                <text x="283" y="345" text-anchor="middle">May</text>
+                                <text x="351" y="345" text-anchor="middle">Jun</text>
+                                <text x="419" y="345" text-anchor="middle">Jul</text>
+                                <text x="487" y="345" text-anchor="middle">Ago</text>
+                                <text x="555" y="345" text-anchor="middle">Sep</text>
+                                <text x="623" y="345" text-anchor="middle">Oct</text>
+                                <text x="691" y="345" text-anchor="middle">Nov</text>
+                                <text x="759" y="345" text-anchor="middle">Dic</text>
+                                <text x="827" y="345" text-anchor="middle">Ene</text>
+                                <text x="895" y="345" text-anchor="middle">Feb</text>
+                            </g>
+
+                            <!-- Programadas line -->
+                            <polyline
+                                class="chart-line programadas-line"
+                                points="147,250 215,215 283,236 351,194 419,222 487,208 555,229 623,201 691,215 759,243 827,187 895,208"
+                                fill="none"
+                                stroke="#3b82f6"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-dasharray="1200"
+                                stroke-dashoffset="1200"
+                            />
+
+                            <!-- Realizadas line -->
+                            <polyline
+                                class="chart-line realizadas-line"
+                                points="147,257 215,208 283,236 351,201 419,215 487,208 555,222 623,194 691,222 759,236 827,187 895,201"
+                                fill="none"
+                                stroke="#10b981"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-dasharray="1200"
+                                stroke-dashoffset="1200"
+                            />
+
+                            <!-- Data points Programadas -->
+                            <g class="data-points programadas-points">
+                                <circle cx="147" cy="250" r="5" fill="#3b82f6" opacity="0"/>
+                                <circle cx="215" cy="215" r="5" fill="#3b82f6" opacity="0"/>
+                                <circle cx="283" cy="236" r="5" fill="#3b82f6" opacity="0"/>
+                                <circle cx="351" cy="194" r="5" fill="#3b82f6" opacity="0"/>
+                                <circle cx="419" cy="222" r="5" fill="#3b82f6" opacity="0"/>
+                                <circle cx="487" cy="208" r="5" fill="#3b82f6" opacity="0"/>
+                                <circle cx="555" cy="229" r="5" fill="#3b82f6" opacity="0"/>
+                                <circle cx="623" cy="201" r="5" fill="#3b82f6" opacity="0"/>
+                                <circle cx="691" cy="215" r="5" fill="#3b82f6" opacity="0"/>
+                                <circle cx="759" cy="243" r="5" fill="#3b82f6" opacity="0"/>
+                                <circle cx="827" cy="187" r="5" fill="#3b82f6" opacity="0"/>
+                                <circle cx="895" cy="208" r="5" fill="#3b82f6" opacity="0"/>
+                            </g>
+
+                            <!-- Data points Realizadas -->
+                            <g class="data-points realizadas-points">
+                                <circle cx="147" cy="257" r="5" fill="#10b981" opacity="0"/>
+                                <circle cx="215" cy="208" r="5" fill="#10b981" opacity="0"/>
+                                <circle cx="283" cy="236" r="5" fill="#10b981" opacity="0"/>
+                                <circle cx="351" cy="201" r="5" fill="#10b981" opacity="0"/>
+                                <circle cx="419" cy="215" r="5" fill="#10b981" opacity="0"/>
+                                <circle cx="487" cy="208" r="5" fill="#10b981" opacity="0"/>
+                                <circle cx="555" cy="222" r="5" fill="#10b981" opacity="0"/>
+                                <circle cx="623" cy="194" r="5" fill="#10b981" opacity="0"/>
+                                <circle cx="691" cy="222" r="5" fill="#10b981" opacity="0"/>
+                                <circle cx="759" cy="236" r="5" fill="#10b981" opacity="0"/>
+                                <circle cx="827" cy="187" r="5" fill="#10b981" opacity="0"/>
+                                <circle cx="895" cy="201" r="5" fill="#10b981" opacity="0"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div style="background: #dcfce7; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                        <h4 style="color: #0A2463; margin-bottom: 1rem; font-weight: 700;">Análisis Inteligente</h4>
+                        <ul style="color: #374151; line-height: 1.8;">
+                            <li>Identifica patrones y tendencias</li>
+                            <li>Optimiza frecuencias de calibración</li>
+                            <li>Detecta equipos críticos</li>
+                            <li>Decisiones basadas en datos reales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: HOJAS DE VIDA DIGITALES (Simplificada) -->
+    <section style="padding: 100px 0; background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.8rem; font-weight: 800; color: #0A2463; margin-bottom: 1rem; letter-spacing: -0.5px;">Hojas de Vida Digitales Completas</h2>
+                <p style="font-size: 1.3rem; color: #6B7280; max-width: 850px; margin: 0 auto;">Trazabilidad total de cada equipo. Todo el historial en un solo lugar. Listo para auditorías en 1 clic.</p>
+            </div>
+
+            <div class="equipment-record-simulator" style="margin-top: 3rem;">
+                <!-- Encabezado del Equipo -->
+                <div class="record-header-simple">
+                    <div class="record-title-section">
+                        <h4>Detalle del Equipo: Balanza Analítica AND GR-202 (BAL-001)</h4>
+                    </div>
+                </div>
+
+                <!-- Información del Equipo en Cards -->
+                <div class="record-info-grid">
+                    <div class="info-card">
+                        <h5>Información General</h5>
+                        <div class="info-list">
+                            <p><strong>Código Interno:</strong> BAL-001</p>
+                            <p><strong>Nombre:</strong> Balanza Analítica AND GR-202</p>
+                            <p><strong>Marca:</strong> AND</p>
+                            <p><strong>Modelo:</strong> GR-202</p>
+                            <p><strong>Nº Serie:</strong> 8234567</p>
+                            <p><strong>Ubicación:</strong> Laboratorio Principal</p>
+                            <p><strong>Responsable:</strong> Juan Pérez</p>
+                            <p><strong>Estado:</strong> <span class="badge-active">Activo</span></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h5>Especificaciones Técnicas</h5>
+                        <div class="info-list">
+                            <p><strong>Rango de Medida:</strong> 0 g - 220 g</p>
+                            <p><strong>Resolución:</strong> 0.0001 g</p>
+                            <p><strong>Error Máximo Permisible:</strong> ±0.0002 g</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h5>Próximas Actividades</h5>
+                        <div class="info-list">
+                            <p><strong>Próxima Calibración:</strong> <span class="date-normal">15 Ene 2026</span></p>
+                            <p><strong>Frecuencia Calibración:</strong> 12 meses</p>
+                            <p><strong>Próximo Mantenimiento:</strong> <span class="date-normal">10 May 2025</span></p>
+                            <p><strong>Frecuencia Mantenimiento:</strong> 6 meses</p>
+                            <p><strong>Próxima Comprobación:</strong> <span class="date-normal">20 Feb 2025</span></p>
+                            <p><strong>Frecuencia Comprobación:</strong> 6 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Historial de Calibraciones (SOLO 1 TABLA COMO EJEMPLO) -->
+                <div class="record-section">
+                    <h4 class="section-title-history">Historial Completo de Actividades</h4>
+                    <div class="table-responsive">
+                        <table class="history-table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Tipo Actividad</th>
+                                    <th>Proveedor</th>
+                                    <th>Resultado</th>
+                                    <th>Nº Certificado</th>
+                                    <th>Próxima</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15 Ene 2025</td>
+                                    <td><span class="badge-active">Calibración</span></td>
+                                    <td>Metrología Andina S.A.S</td>
+                                    <td><span class="badge-conforme">Conforme</span></td>
+                                    <td>CAL-2025-001234</td>
+                                    <td>15 Ene 2026</td>
+                                </tr>
+                                <tr>
+                                    <td>10 Nov 2024</td>
+                                    <td><span style="background: #f59e0b; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem;">Mantenimiento</span></td>
+                                    <td>Técnicos SAM</td>
+                                    <td><span class="badge-conforme">Conforme</span></td>
+                                    <td>MANT-2024-089</td>
+                                    <td>10 May 2025</td>
+                                </tr>
+                                <tr>
+                                    <td>20 Ago 2024</td>
+                                    <td><span style="background: #3b82f6; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem;">Comprobación</span></td>
+                                    <td>Juan Pérez</td>
+                                    <td><span class="badge-conforme">Conforme</span></td>
+                                    <td>COMP-2024-234</td>
+                                    <td>20 Feb 2025</td>
+                                </tr>
+                                <tr>
+                                    <td>05 Ene 2024</td>
+                                    <td><span class="badge-active">Calibración</span></td>
+                                    <td>Metrología Andina S.A.S</td>
+                                    <td><span class="badge-conforme">Conforme</span></td>
+                                    <td>CAL-2024-008932</td>
+                                    <td>05 Ene 2025</td>
+                                </tr>
+                                <tr>
+                                    <td>10 May 2024</td>
+                                    <td><span style="background: #f59e0b; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem;">Mantenimiento</span></td>
+                                    <td>Técnicos SAM</td>
+                                    <td><span class="badge-conforme">Conforme</span></td>
+                                    <td>MANT-2024-045</td>
+                                    <td>10 Nov 2024</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div style="background: #dbeafe; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                    <h4 style="color: #0A2463; margin-bottom: 1rem; font-weight: 700;">Beneficios de las Hojas de Vida Digitales</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <ul style="color: #374151; line-height: 1.8;">
+                            <li>Todo el historial en un solo lugar</li>
+                            <li>Búsqueda instantánea de cualquier equipo</li>
+                            <li>Certificados PDF adjuntos automáticamente</li>
+                        </ul>
+                        <ul style="color: #374151; line-height: 1.8;">
+                            <li>Exporta reportes para auditorías en 1 clic</li>
+                            <li>Trazabilidad 100% completa</li>
+                            <li>Cumplimiento ISO 17020 garantizado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 6: FUNCIONALIDADES CLAVE (Reducida a 4) -->
+    <section style="padding: 100px 0; background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.8rem; font-weight: 800; color: #0A2463; margin-bottom: 1rem; letter-spacing: -0.5px;">Funcionalidades Esenciales Incluidas</h2>
+                <p style="font-size: 1.3rem; color: #6B7280;">Todo lo que necesitas para gestión metrológica profesional</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; margin-top: 3rem; max-width: 950px; margin-left: auto; margin-right: auto;">
+                <div style="background: white; padding: 2.5rem; border-radius: 16px; border: 2px solid #e5e7eb; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); transition: all 0.4s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.12)'; this.style.borderColor='#3B82F6'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.08)'; this.style.borderColor='#e5e7eb'">
+                    <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Exportación Rápida</h3>
+                    <p style="color: #4B5563; line-height: 1.7;">Reportes en PDF y Excel listos para auditorías. Descarga individual o masiva en segundos.</p>
+                    <div style="margin-top: 1.25rem; padding: 1rem; background: #f9fafb; border-radius: 8px;">
+                        <strong style="color: #0A2463;">✓</strong> <span style="color: #374151;">Reportes personalizables por equipo o área</span>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 2.5rem; border-radius: 16px; border: 2px solid #e5e7eb; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); transition: all 0.4s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.12)'; this.style.borderColor='#3B82F6'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.08)'; this.style.borderColor='#e5e7eb'">
+                    <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Almacenamiento Seguro</h3>
+                    <p style="color: #4B5563; line-height: 1.7;">Certificados y documentos en la nube AWS S3 encriptados. Nunca pierdas información.</p>
+                    <div style="margin-top: 1.25rem; padding: 1rem; background: #f9fafb; border-radius: 8px;">
+                        <strong style="color: #0A2463;">✓</strong> <span style="color: #374151;">Backups automáticos diarios</span>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 2.5rem; border-radius: 16px; border: 2px solid #e5e7eb; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); transition: all 0.4s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.12)'; this.style.borderColor='#3B82F6'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.08)'; this.style.borderColor='#e5e7eb'">
+                    <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Carga Masiva</h3>
+                    <p style="color: #4B5563; line-height: 1.7;">Importa 100+ equipos en minutos desde Excel. Plantilla predefinida lista para usar.</p>
+                    <div style="margin-top: 1.25rem; padding: 1rem; background: #f9fafb; border-radius: 8px;">
+                        <strong style="color: #0A2463;">✓</strong> <span style="color: #374151;">Validación automática de datos</span>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 2.5rem; border-radius: 16px; border: 2px solid #e5e7eb; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); transition: all 0.4s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.12)'; this.style.borderColor='#3B82F6'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.08)'; this.style.borderColor='#e5e7eb'">
+                    <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Multi-Usuario</h3>
+                    <p style="color: #4B5563; line-height: 1.7;">Roles y permisos configurables. Admin, técnico, consulta. Control total de accesos.</p>
+                    <div style="margin-top: 1.25rem; padding: 1rem; background: #f9fafb; border-radius: 8px;">
+                        <strong style="color: #0A2463;">✓</strong> <span style="color: #374151;">Historial de cambios por usuario</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 6B: FUNCIONALIDADES AVANZADAS (10 features reales) -->
+    <section style="padding: 100px 0; background: #ffffff;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.8rem; font-weight: 800; color: #0A2463; margin-bottom: 1rem; letter-spacing: -0.5px;">Funcionalidades Avanzadas</h2>
+                <p style="font-size: 1.3rem; color: #6B7280;">Capacidades premium incluidas en la plataforma SAM</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 3rem; max-width: 1100px; margin-left: auto; margin-right: auto;">
+                <!-- Feature 1 -->
+                <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 2rem; border-radius: 12px; border-left: 4px solid #0A2463; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 28px rgba(10, 36, 99, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.06)'">
+                    <h4 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Multi-Tenant Seguro</h4>
+                    <p style="color: #4B5563; line-height: 1.6; margin: 0;">Múltiples empresas con aislamiento completo de datos. Cada organización ve solo su información.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 2rem; border-radius: 12px; border-left: 4px solid #3B82F6; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 28px rgba(59, 130, 246, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.06)'">
+                    <h4 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Gestión de Proveedores</h4>
+                    <p style="color: #4B5563; line-height: 1.6; margin: 0;">Base de datos completa de laboratorios de calibración con contacto, especialidad y certificaciones.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 2rem; border-radius: 12px; border-left: 4px solid #0A2463; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 28px rgba(10, 36, 99, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.06)'">
+                    <h4 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Personalización de Documentos</h4>
+                    <p style="color: #4B5563; line-height: 1.6; margin: 0;">Adapta PDFs con tu logo, códigos documentales, versiones y pie de firma institucional.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 2rem; border-radius: 12px; border-left: 4px solid #3B82F6; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 28px rgba(59, 130, 246, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.06)'">
+                    <h4 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Importación Masiva desde Excel</h4>
+                    <p style="color: #4B5563; line-height: 1.6; margin: 0;">Carga 100+ equipos en minutos con plantilla predefinida y validación automática de datos.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 2rem; border-radius: 12px; border-left: 4px solid #0A2463; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 28px rgba(10, 36, 99, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.06)'">
+                    <h4 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Backups Automáticos Diarios</h4>
+                    <p style="color: #4B5563; line-height: 1.6; margin: 0;">Respaldos diarios a AWS S3 cifrado con retención de 6 meses. Nunca pierdas información.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 2rem; border-radius: 12px; border-left: 4px solid #3B82F6; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 28px rgba(59, 130, 246, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.06)'">
+                    <h4 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Control de Accesos por Rol</h4>
+                    <p style="color: #4B5563; line-height: 1.6; margin: 0;">3 niveles de permisos: Gerencia (completo), Operativo (gestión) y Visualizador (solo lectura).</p>
+                </div>
+
+                <!-- Feature 7 -->
+                <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 2rem; border-radius: 12px; border-left: 4px solid #0A2463; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 28px rgba(10, 36, 99, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.06)'">
+                    <h4 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Recuperación de Datos</h4>
+                    <p style="color: #4B5563; line-height: 1.6; margin: 0;">Período de gracia de 180 días para recuperar datos eliminados accidentalmente.</p>
+                </div>
+
+                <!-- Feature 8 -->
+                <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 2rem; border-radius: 12px; border-left: 4px solid #3B82F6; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 28px rgba(59, 130, 246, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.06)'">
+                    <h4 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Notificaciones Programadas</h4>
+                    <p style="color: #4B5563; line-height: 1.6; margin: 0;">Alertas automáticas por email de vencimientos próximos (7, 15 y 30 días antes).</p>
+                </div>
+
+                <!-- Feature 9 -->
+                <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 2rem; border-radius: 12px; border-left: 4px solid #0A2463; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 28px rgba(10, 36, 99, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.06)'">
+                    <h4 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Catálogos Personalizables</h4>
+                    <p style="color: #4B5563; line-height: 1.6; margin: 0;">Define ubicaciones físicas, procedimientos de medición y unidades de medida específicas de tu empresa.</p>
+                </div>
+
+                <!-- Feature 10 -->
+                <div style="background: linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 100%); padding: 2rem; border-radius: 12px; border-left: 4px solid #3B82F6; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 28px rgba(59, 130, 246, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.06)'">
+                    <h4 style="color: #0A2463; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Sistema de Cola de Procesamiento</h4>
+                    <p style="color: #4B5563; line-height: 1.6; margin: 0;">Generación optimizada de paquetes ZIP con notificaciones de progreso en tiempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 7: CUMPLIMIENTO NORMATIVO (Barra Compacta) -->
+    <section style="padding: 60px 0; background: linear-gradient(135deg, #0A2463 0%, #1e40af 100%);">
+        <div class="container">
+            <div style="text-align: center;">
+                <h3 style="color: #fff; font-size: 1.8rem; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    Cumplimiento Normativo Garantizado por Diseño
+                </h3>
+                <p style="color: #e0e7ff; font-size: 1.1rem; margin-bottom: 2rem;">Formatos basados en normas internacionales. Diseñados por expertos con una década de experiencia en organismos de inspección acreditados ISO/IEC 17020.</p>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center;">
+                    <span style="background: #fff; color: #0A2463; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 1rem;">ISO/IEC 17020</span>
+                    <span style="background: #fff; color: #0A2463; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 1rem;">ILAC G-24:2022</span>
+                    <span style="background: #fff; color: #0A2463; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 1rem;">ILAC G8:2019</span>
+                    <span style="background: #fff; color: #0A2463; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 1rem;">OIML D 10:2022</span>
+                    <span style="background: #fff; color: #0A2463; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 1rem;">ISO/IEC 17025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 8: CTA FINAL -->
+    <section class="cta-final" style="padding: 100px 0; background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);">
+        <div class="container">
+            <div class="cta-content" style="text-align: center;">
+                <h2 style="font-size: 2.8rem; font-weight: 800; color: #0A2463; margin-bottom: 1rem; letter-spacing: -0.5px;">Comienza tu Transformación Metrológica Hoy</h2>
+                <p style="font-size: 1.3rem; color: #6B7280; margin-bottom: 4rem;">Elige la opción que mejor se adapte a tus necesidades</p>
+
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-top: 3rem; max-width: 1100px; margin-left: auto; margin-right: auto;">
+                    <div style="background: white; padding: 2.5rem; border-radius: 16px; border: 2px solid #e5e7eb; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); text-align: center; transition: all 0.4s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.08)'">
+                        <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Reunión Inicial</h3>
+                        <p style="color: #4B5563; margin-bottom: 2rem; line-height: 1.6;">Conversamos sobre tus necesidades y te presentamos opciones</p>
+                        <a href="contacto.html" style="background: #0A2463; color: white; padding: 0.9rem 2rem; font-size: 1rem; border-radius: 10px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.background='#1e40af'" onmouseout="this.style.background='#0A2463'">Agendar Reunión</a>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%); padding: 2.5rem; border-radius: 16px; border: 3px solid #3b82f6; box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2); text-align: center; position: relative; transition: all 0.4s ease;" onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 20px 50px rgba(59, 130, 246, 0.3)'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 40px rgba(59, 130, 246, 0.2)'">
+                        <div style="background: linear-gradient(135deg, #3b82f6, #1e40af); color: #fff; padding: 0.6rem 1.25rem; border-radius: 25px; font-size: 0.8rem; font-weight: 800; display: inline-block; margin-bottom: 1rem; letter-spacing: 0.5px; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);">RECOMENDADO</div>
+                        <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Trial 30 Días</h3>
+                        <p style="color: #4B5563; margin-bottom: 2rem; line-height: 1.6;">Sin tarjeta de crédito. Sin compromiso.</p>
+                        <a href="contacto.html" style="background: linear-gradient(135deg, #3B82F6, #1E40AF); color: white; padding: 0.9rem 2rem; font-size: 1rem; border-radius: 10px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease; box-shadow: 0 6px 20px rgba(197, 165, 114, 0.4);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(197, 165, 114, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(197, 165, 114, 0.4)'">Solicitar Trial</a>
+                    </div>
+
+                    <div style="background: white; padding: 2.5rem; border-radius: 16px; border: 2px solid #e5e7eb; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); text-align: center; transition: all 0.4s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.08)'">
+                        <h3 style="color: #0A2463; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 700;">Iniciar Sesión</h3>
+                        <p style="color: #4B5563; margin-bottom: 2rem; line-height: 1.6;">Ya soy cliente de SAM Metrología</p>
+                        <a href="https://app.sammetrologia.com/core/login/" style="background: transparent; color: #0A2463; padding: 0.9rem 2rem; font-size: 1rem; border-radius: 10px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease; border: 2px solid #0A2463;" onmouseover="this.style.background='#0A2463'; this.style.color='white'" onmouseout="this.style.background='transparent'; this.style.color='#0A2463'">Entrar</a>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 2.5rem; justify-content: center; margin-top: 3.5rem; flex-wrap: wrap;">
+                    <span style="color: #0A2463; font-weight: 700; font-size: 1.05rem;">Implementación inmediata</span>
+                    <span style="color: #0A2463; font-weight: 700; font-size: 1.05rem;">Capacitación incluida</span>
+                    <span style="color: #0A2463; font-weight: 700; font-size: 1.05rem;">Soporte técnico</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo-text">SAM</div>
+                    <div class="footer-tagline">METROLOGÍA S.A.S</div>
+                    <p>Gestión metrológica inteligente para organizaciones en Colombia.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="plataforma.html">Plataforma SAM</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="https://app.sammetrologia.com/core/login/" target="_blank"><strong>Iniciar Sesión</strong></a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:metrologiasam@gmail.com">metrologiasam@gmail.com</a></li>
+                        <li><a href="https://wa.me/573247990534" target="_blank">+57 324 799 0534</a></li>
+                        <li>Colombia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SAM Metrología S.A.S. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
