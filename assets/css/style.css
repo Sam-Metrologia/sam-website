@@ -183,6 +183,26 @@ p {
     display: none;
 }
 
+.btn-trial {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    color: var(--white) !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.btn-trial:hover {
+    background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-trial::after {
+    display: none;
+}
+
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
