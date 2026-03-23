@@ -127,7 +127,7 @@ p {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.1rem;
     align-items: center;
 }
 
@@ -135,7 +135,7 @@ p {
     text-decoration: none;
     color: var(--text-secondary);
     font-weight: 500;
-    font-size: 0.9375rem;
+    font-size: 0.84rem;
     letter-spacing: 0.01em;
     transition: var(--transition);
     position: relative;

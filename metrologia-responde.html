@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Metrología Responde | Guía Técnica de Gestión Metrológica Colombia</title>
+    <meta name="description" content="Respuestas técnicas a las preguntas más frecuentes sobre metrología: confirmación metrológica, intervalos de calibración, trazabilidad, ISO 17020, ISO 9001 y más. Basado en normativas ILAC, ISO y VIM.">
+    <meta name="keywords" content="confirmación metrológica, intervalos de calibración, trazabilidad metrológica, ISO 17020, ISO 9001 equipos medición, laboratorio calibración Colombia, ILAC G-24, comprobaciones intermedias, incertidumbre medición, organismo inspección ONAC">
+    <meta name="author" content="SAM Metrología S.A.S">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="language" content="Spanish">
+    <meta name="geo.region" content="CO">
+    <link rel="canonical" href="https://sammetrologia.com/metrologia-responde.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sammetrologia.com/metrologia-responde.html">
+    <meta property="og:title" content="Metrología Responde | Guía Técnica SAM Metrología">
+    <meta property="og:description" content="Las 10 preguntas más frecuentes sobre gestión metrológica respondidas con base en ISO, ILAC y VIM. Por expertos con 8 años en organismos acreditados ONAC.">
+    <meta property="og:image" content="https://sammetrologia.com/assets/images/logo.png">
+    <meta property="og:site_name" content="SAM Metrología S.A.S">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-option1.png">
+    <link rel="shortcut icon" href="assets/images/favicon-option1.png">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon-option1.svg">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FAQ Schema para Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Qué es la confirmación metrológica?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La confirmación metrológica es el conjunto de operaciones necesarias para asegurar que un equipo de medición cumple con los requisitos para su uso previsto. Está definida en la norma ISO 10012:2003 e incluye la calibración del equipo, la comparación de resultados con los requisitos metrológicos, y la decisión de aptitud para uso."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo seleccionar un laboratorio de calibración?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Un laboratorio de calibración debe estar acreditado bajo ISO/IEC 17025:2017 por un organismo de acreditación reconocido, como ONAC en Colombia. Verifique que el alcance de acreditación cubra el tipo de instrumento, el rango de medida y la incertidumbre requerida para su aplicación."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué son los intervalos de calibración y cómo se determinan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El intervalo de calibración es el período entre calibraciones sucesivas de un instrumento. Según ILAC G-24:2022, existen cuatro métodos para determinarlo: tiempo calendario, tiempo de uso, gráfico de control y verificación automática. La selección del método depende del riesgo asociado al uso del equipo y la estabilidad histórica del instrumento."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        /* ── Page header ──────────────────────────────── */
+        .faq-hero {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #0A2463 0%, #1E3A8A 100%);
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .faq-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -10%;
+            width: 600px; height: 600px;
+            background: rgba(197,165,114,.07);
+            border-radius: 50%;
+        }
+        .faq-hero .tag {
+            display: inline-block;
+            background: rgba(197,165,114,.2);
+            border: 1px solid rgba(197,165,114,.4);
+            color: #C5A572;
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            padding: 6px 18px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+        }
+        .faq-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+        .faq-hero h1 span { color: #C5A572; }
+        .faq-hero p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,.9);
+            max-width: 620px;
+            margin: 0 auto 32px;
+            position: relative;
+            z-index: 1;
+        }
+        .normas-pill {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        .norma-badge {
+            background: rgba(255,255,255,.12);
+            border: 1px solid rgba(255,255,255,.25);
+            color: #fff;
+            font-size: .75rem;
+            font-weight: 600;
+            padding: 5px 14px;
+            border-radius: 50px;
+        }
+
+        /* ── Contenido ────────────────────────────────── */
+        .faq-body {
+            background: #F9FAFB;
+            padding: 60px 0 80px;
+        }
+        .faq-layout {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            align-items: start;
+        }
+        @media (max-width: 800px) { .faq-layout { grid-template-columns: 1fr; } }
+
+        /* Índice lateral */
+        .faq-index {
+            background: #fff;
+            border-radius: 14px;
+            border: 1px solid #E5E7EB;
+            padding: 24px;
+            position: sticky;
+            top: 90px;
+        }
+        .faq-index h3 {
+            font-size: .8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: #6B7280;
+            margin-bottom: 16px;
+            font-family: 'Inter', sans-serif;
+        }
+        .faq-index ol {
+            padding-left: 0;
+            list-style: none;
+            counter-reset: idx;
+        }
+        .faq-index ol li {
+            counter-increment: idx;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .faq-index ol li::before {
+            content: counter(idx);
+            flex-shrink: 0;
+            width: 20px; height: 20px;
+            background: #F0F4F8;
+            color: #0A2463;
+            font-size: .7rem;
+            font-weight: 700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1px;
+        }
+        .faq-index ol li a {
+            font-size: .78rem;
+            color: #374151;
+            text-decoration: none;
+            line-height: 1.4;
+            transition: color .2s;
+        }
+        .faq-index ol li a:hover { color: #0A2463; font-weight: 600; }
+        .index-cta {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #F0F4F8;
+            text-align: center;
+        }
+        .index-cta p {
+            font-size: .75rem;
+            color: #6B7280;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .index-cta a {
+            display: block;
+            background: #0A2463;
+            color: #fff;
+            font-size: .78rem;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            transition: background .2s;
+        }
+        .index-cta a:hover { background: #1E3A8A; }
+
+        /* Preguntas */
+        .faq-questions { display: flex; flex-direction: column; gap: 20px; }
+
+        .faq-card {
+            background: #fff;
+            border-radius: 14px;
+            border: 1px solid #E5E7EB;
+            overflow: hidden;
+            transition: box-shadow .25s;
+        }
+        .faq-card:hover { box-shadow: 0 6px 24px rgba(10,36,99,.09); }
+
+        .faq-q {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 22px 24px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .faq-num {
+            flex-shrink: 0;
+            width: 32px; height: 32px;
+            background: #0A2463;
+            color: #fff;
+            font-size: .78rem;
+            font-weight: 700;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1px;
+        }
+        .faq-q-text { flex: 1; }
+        .faq-q-text h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0A2463;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.4;
+        }
+        .faq-q-text .norma-ref {
+            font-size: .7rem;
+            color: #C5A572;
+            font-weight: 600;
+            margin-top: 4px;
+            display: block;
+        }
+        .faq-arrow {
+            flex-shrink: 0;
+            width: 20px; height: 20px;
+            color: #9CA3AF;
+            transition: transform .3s;
+            margin-top: 4px;
+        }
+        .faq-card.open .faq-arrow { transform: rotate(180deg); }
+
+        .faq-a {
+            display: none;
+            padding: 0 24px 24px 72px;
+            border-top: 1px solid #F0F4F8;
+        }
+        .faq-card.open .faq-a { display: block; }
+        .faq-a p {
+            font-size: .9rem;
+            color: #374151;
+            line-height: 1.8;
+            margin: 16px 0 0;
+        }
+        .faq-a p + p { margin-top: 10px; }
+        .faq-a strong { color: #0A2463; }
+        .faq-a .highlight-box {
+            background: #F0F4F8;
+            border-left: 4px solid #C5A572;
+            border-radius: 0 8px 8px 0;
+            padding: 14px 16px;
+            margin-top: 14px;
+        }
+        .faq-a .highlight-box p { margin: 0; font-size: .82rem; }
+        .faq-a ul {
+            margin: 12px 0 0 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        .faq-a ul li {
+            font-size: .88rem;
+            color: #374151;
+            padding: 5px 0 5px 20px;
+            position: relative;
+            line-height: 1.6;
+        }
+        .faq-a ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #C5A572;
+            font-weight: 700;
+        }
+        .faq-a .sam-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 16px;
+            background: #F0F4F8;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            padding: 10px 16px;
+            font-size: .8rem;
+            font-weight: 600;
+            color: #0A2463;
+            text-decoration: none;
+            transition: background .2s;
+        }
+        .faq-a .sam-link:hover { background: #E5E7EB; }
+
+        /* CTA final */
+        .faq-final-cta {
+            background: linear-gradient(135deg, #0A2463 0%, #1E3A8A 100%);
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .faq-final-cta h2 { font-size: 1.8rem; color: #fff; margin-bottom: 10px; }
+        .faq-final-cta p { color: rgba(255,255,255,.85); margin-bottom: 28px; }
+        .faq-final-cta .btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+        .btn-white {
+            background: #fff;
+            color: #0A2463;
+            padding: 13px 30px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: .9rem;
+            text-decoration: none;
+            transition: all .2s;
+        }
+        .btn-white:hover { background: #F0F4F8; }
+        .btn-outline-white {
+            background: transparent;
+            color: #fff;
+            padding: 13px 30px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: .9rem;
+            text-decoration: none;
+            border: 2px solid rgba(255,255,255,.5);
+            transition: all .2s;
+        }
+        .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+
+        /* WhatsApp float */
+        .whatsapp-float {
+            position: fixed; bottom: 24px; right: 24px;
+            background: #25d366; color: #fff;
+            border-radius: 50px; padding: 12px 20px;
+            display: flex; align-items: center; gap: 10px;
+            font-size: .88rem; font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37,211,102,.45);
+            z-index: 9999; transition: transform .2s, box-shadow .2s;
+        }
+        .whatsapp-float:hover { transform: scale(1.05); color: #fff; }
+        .whatsapp-float svg { width: 20px; height: 20px; flex-shrink: 0; }
+    </style>
+</head>
+<body>
+
+    <!-- ── NAVBAR ──────────────────────────────────────── -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="SAM Metrología">
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="plataforma.html" class="nav-link">Plataforma SAM</a></li>
+                    <li><a href="precios.html" class="nav-link">Precios</a></li>
+                    <li><a href="metrologia-responde.html" class="nav-link active">Metrología Responde</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="https://app.sammetrologia.com/core/login/" class="nav-link">Iniciar Sesión</a></li>
+                    <li><a href="https://app.sammetrologia.com/core/solicitar-trial/" class="nav-link btn-trial" target="_blank">Trial Gratis</a></li>
+                    <li><a href="contacto.html" class="nav-link btn-contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── HERO ───────────────────────────────────────── -->
+    <section class="faq-hero">
+        <div class="container">
+            <div class="tag">Base de Conocimiento Metrológico</div>
+            <h1>Metrología <span>Responde</span></h1>
+            <p>Las preguntas que más nos hacen las empresas colombianas sobre gestión metrológica — respondidas con base en normativas internacionales vigentes.</p>
+            <div class="normas-pill">
+                <span class="norma-badge">ISO/IEC 17020:2012</span>
+                <span class="norma-badge">ISO/IEC 17025:2017</span>
+                <span class="norma-badge">ILAC G-24:2022</span>
+                <span class="norma-badge">ISO 10012:2003</span>
+                <span class="norma-badge">ISO 9001:2015</span>
+                <span class="norma-badge">VIM 3ª Ed.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CUERPO ──────────────────────────────────────── -->
+    <section class="faq-body">
+        <div class="faq-layout">
+
+            <!-- Índice lateral -->
+            <aside class="faq-index">
+                <h3>Preguntas</h3>
+                <ol>
+                    <li><a href="#q1">¿Qué es la confirmación metrológica?</a></li>
+                    <li><a href="#q2">¿Cómo seleccionar un laboratorio de calibración?</a></li>
+                    <li><a href="#q3">¿Cómo se determinan los intervalos de calibración?</a></li>
+                    <li><a href="#q4">¿Qué son las comprobaciones intermedias?</a></li>
+                    <li><a href="#q5">¿Qué diferencia hay entre calibración y ajuste?</a></li>
+                    <li><a href="#q6">¿Qué exige ISO 9001 sobre equipos de medición?</a></li>
+                    <li><a href="#q7">¿Qué es la trazabilidad metrológica?</a></li>
+                    <li><a href="#q8">¿Qué es un organismo de inspección ISO 17020?</a></li>
+                    <li><a href="#q9">¿Qué es la incertidumbre de medición?</a></li>
+                    <li><a href="#q10">¿Qué hacer si un equipo falla la calibración?</a></li>
+                </ol>
+                <div class="index-cta">
+                    <p>¿Tu pregunta no está aquí? Escríbenos directamente.</p>
+                    <a href="https://wa.me/573247990534?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20metrolog%C3%ADa" target="_blank">Preguntar por WhatsApp</a>
+                </div>
+            </aside>
+
+            <!-- Preguntas y respuestas -->
+            <div class="faq-questions">
+
+                <!-- P1 -->
+                <div class="faq-card" id="q1">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-num">1</div>
+                        <div class="faq-q-text">
+                            <h3>¿Qué es la confirmación metrológica?</h3>
+                            <span class="norma-ref">ISO 10012:2003 · ISO/IEC 17020:2012</span>
+                        </div>
+                        <svg class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>La <strong>confirmación metrológica</strong> es el conjunto de operaciones requeridas para asegurar que un equipo de medición cumple con los requisitos para su uso previsto. Está definida en la norma <strong>ISO 10012:2003</strong> (Sistemas de gestión de las mediciones) y es un requisito explícito para los organismos de inspección bajo <strong>ISO/IEC 17020:2012</strong>.</p>
+                        <p>El proceso incluye:</p>
+                        <ul>
+                            <li>Calibración del equipo por un laboratorio trazable</li>
+                            <li>Comparación de los resultados de calibración contra los requisitos metrológicos del equipo</li>
+                            <li>Decisión de aptitud: ¿el equipo es apto para el uso previsto?</li>
+                            <li>Marcado o etiquetado del estado de confirmación con fecha de vencimiento</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <p><strong>Punto clave:</strong> La confirmación metrológica NO es lo mismo que la calibración. La calibración determina la desviación del equipo; la confirmación metrológica decide si esa desviación es aceptable para el uso específico. Un equipo puede estar calibrado y aun así no ser apto para confirmación metrológica.</p>
+                        </div>
+                        <a href="plataforma.html" class="sam-link">→ SAM genera automáticamente el documento de confirmación metrológica con reglas de decisión ILAC G8</a>
+                    </div>
+                </div>
+
+                <!-- P2 -->
+                <div class="faq-card" id="q2">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-num">2</div>
+                        <div class="faq-q-text">
+                            <h3>¿Cómo seleccionar un laboratorio de calibración?</h3>
+                            <span class="norma-ref">ISO/IEC 17025:2017 · EA-4/02 · ONAC</span>
+                        </div>
+                        <svg class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>Para garantizar la <strong>trazabilidad metrológica</strong> de sus instrumentos, el laboratorio de calibración que seleccione debe cumplir con criterios técnicos específicos:</p>
+                        <ul>
+                            <li><strong>Acreditación vigente bajo ISO/IEC 17025:2017</strong> emitida por ONAC (Colombia) u otro organismo de acreditación signatario del ILAC MRA</li>
+                            <li>El <strong>alcance de acreditación</strong> debe cubrir explícitamente el tipo de instrumento, el rango de medida y la magnitud de interés</li>
+                            <li>La <strong>incertidumbre de medición (CMC)</strong> declarada en el alcance debe ser significativamente menor que la tolerancia de su equipo — como regla general, al menos 4 veces menor (relación 4:1)</li>
+                            <li>El certificado de calibración debe incluir resultados, incertidumbre expandida y trazabilidad al Sistema Internacional de Unidades (SI)</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <p><strong>¿Dónde verificar?</strong> El directorio de laboratorios acreditados por ONAC está disponible en <strong>onac.org.co</strong>. Verifique siempre que la acreditación esté vigente antes de enviar el equipo.</p>
+                        </div>
+                        <a href="contacto.html" class="sam-link">→ SAM cuenta con base de datos de laboratorios acreditados. Consúltenos</a>
+                    </div>
+                </div>
+
+                <!-- P3 -->
+                <div class="faq-card" id="q3">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-num">3</div>
+                        <div class="faq-q-text">
+                            <h3>¿Cómo se determinan los intervalos de calibración?</h3>
+                            <span class="norma-ref">ILAC G-24:2022 · ISO/IEC 17025:2017 Cláusula 6.4.10</span>
+                        </div>
+                        <svg class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>El <strong>intervalo de calibración</strong> es el período máximo entre calibraciones sucesivas de un instrumento. No existe un valor estándar universal: cada equipo y cada aplicación requieren un análisis propio.</p>
+                        <p>Según <strong>ILAC G-24</strong> (Sección 6 — Métodos de revisión de los intervalos de recalibración), la norma define <strong>cinco métodos</strong> en el siguiente orden:</p>
+                        <ul>
+                            <li><strong>Método 1 — Ajuste automático o "escalera" (tiempo calendario):</strong> El intervalo se ajusta automáticamente según el resultado de la calibración. Si el equipo llega conforme, el intervalo se amplía; si llega no conforme, se acorta. Es el método más utilizado por su sencillez de implementación.</li>
+                            <li><strong>Método 2 — Gráfico de control (tiempo calendario):</strong> Se monitorea estadísticamente la deriva del equipo mediante cartas de control con base en resultados históricos de calibración. Permite detectar tendencias y tomar decisiones objetivas sobre el intervalo antes de que ocurra una no conformidad.</li>
+                            <li><strong>Método 3 — Tiempo "En uso":</strong> El intervalo se expresa en horas de operación acumuladas en lugar de tiempo calendario. Aplica cuando el deterioro del equipo depende directamente del uso y no del tiempo transcurrido — equipos de uso esporádico o muy intensivo.</li>
+                            <li><strong>Método 4 — Comprobación en servicio o prueba de "caja negra":</strong> Se utilizan patrones de referencia internos, materiales de referencia o dispositivos de verificación para comprobar el estado del equipo entre calibraciones formales. No reemplaza la calibración — la complementa y puede justificar intervalos más largos.</li>
+                            <li><strong>Método 5 — Otros enfoques estadísticos:</strong> Métodos basados en análisis estadísticos más avanzados, como regresión, análisis de fiabilidad o modelos probabilísticos de deriva. Aplican cuando se dispone de suficiente historial de datos y se busca optimizar el intervalo con mayor rigor matemático.</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <p><strong>Error frecuente:</strong> Usar el mismo intervalo para todos los equipos (típicamente "1 año") sin análisis técnico. Esto incumple el requisito 6.4.10 de ISO/IEC 17025:2017 y puede ser objeto de no conformidad en auditorías ONAC.</p>
+                        </div>
+                        <a href="plataforma.html" class="sam-link">→ SAM calcula y justifica intervalos de calibración con los 4 métodos ILAC G-24:2022</a>
+                    </div>
+                </div>
+
+                <!-- P4 -->
+                <div class="faq-card" id="q4">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-num">4</div>
+                        <div class="faq-q-text">
+                            <h3>¿Qué son las comprobaciones intermedias?</h3>
+                            <span class="norma-ref">ILAC G-24:2022 · ISO/IEC 17025:2017 Cláusula 6.4.10</span>
+                        </div>
+                        <svg class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>Las <strong>comprobaciones intermedias</strong> son operaciones técnicas realizadas <strong>entre calibraciones formales</strong>, cuyo propósito es mantener la confianza en el estado de calibración del equipo y comprobar que sigue manteniendo sus características metrológicas antes de que cualquier desviación afecte los resultados.</p>
+                        <p>Son un requisito de la <strong>cláusula 6.4.10 de ISO/IEC 17025:2017</strong> y están detalladas en <strong>ILAC G-24:2022</strong>. Para organismos ISO 17020, forman parte del sistema de gestión de equipos. No deben confundirse con la <em>verificación</em> (VIM 2.44), que es un concepto distinto vinculado a la confirmación metrológica.</p>
+                        <ul>
+                            <li>Se realizan con <strong>patrones de referencia internos</strong> o materiales de referencia</li>
+                            <li>No sustituyen la calibración — la complementan</li>
+                            <li>Deben estar documentadas con criterios de aceptación definidos previamente</li>
+                            <li>Si el resultado está fuera del criterio, el equipo se saca de servicio hasta nueva calibración</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <p><strong>¿Con qué frecuencia hacerlas?</strong> Depende del riesgo asociado al uso del equipo, la frecuencia de uso y la estabilidad histórica. No hay una frecuencia universal; debe estar justificada técnicamente.</p>
+                        </div>
+                        <a href="plataforma.html" class="sam-link">→ SAM registra y evalúa comprobaciones intermedias con criterios de conformidad automáticos</a>
+                    </div>
+                </div>
+
+                <!-- P5 -->
+                <div class="faq-card" id="q5">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-num">5</div>
+                        <div class="faq-q-text">
+                            <h3>¿Cuál es la diferencia entre calibración y ajuste?</h3>
+                            <span class="norma-ref">VIM 3ª Ed. — JCGM 200:2012</span>
+                        </div>
+                        <svg class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>Esta es una de las confusiones más frecuentes en el ámbito metrológico y tiene implicaciones técnicas importantes:</p>
+                        <ul>
+                            <li><strong>Calibración</strong> (VIM 2.39): Operación que establece la relación entre los valores indicados por un instrumento y los valores de la magnitud realizados por patrones. La calibración <strong>determina</strong> el error — no lo corrige.</li>
+                            <li><strong>Ajuste</strong> (VIM 3.11): Conjunto de operaciones realizadas sobre un sistema de medición para que proporcione indicaciones prescritas correspondientes a valores dados de la magnitud. El ajuste <strong>modifica</strong> el instrumento para corregir su error.</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <p><strong>Implicación práctica:</strong> Después de un ajuste, el instrumento <strong>siempre debe ser recalibrado</strong>, ya que el ajuste invalida el certificado de calibración anterior. Un laboratorio que "calibra y ajusta" sin emitir un nuevo certificado post-ajuste está incumpliendo ISO/IEC 17025:2017.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- P6 -->
+                <div class="faq-card" id="q6">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-num">6</div>
+                        <div class="faq-q-text">
+                            <h3>¿Qué exige ISO 9001 sobre equipos de medición?</h3>
+                            <span class="norma-ref">ISO 9001:2015 Cláusula 7.1.5</span>
+                        </div>
+                        <svg class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>La cláusula <strong>7.1.5 de ISO 9001:2015</strong> (Recursos de seguimiento y medición) es uno de los requisitos más frecuentemente auditados y con mayor incumplimiento en empresas colombianas. Establece que la organización debe:</p>
+                        <ul>
+                            <li>Determinar qué equipos de medición son necesarios para asegurar la conformidad de productos y servicios</li>
+                            <li>Calibrarlos o verificarlos a <strong>intervalos especificados</strong>, o antes de su uso</li>
+                            <li>Identificarlos para determinar su estado de calibración</li>
+                            <li>Protegerlos contra ajustes, daños o deterioro que puedan invalidar su estado</li>
+                            <li>Conservar la <strong>información documentada</strong> como evidencia (registros de calibración)</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <p><strong>Lo que piden los auditores:</strong> En una auditoría de recertificación ISO 9001, solicitarán el listado de equipos de medición, sus certificados de calibración vigentes y la evidencia de que los resultados son conformes con los requisitos del proceso. El manejo en Excel es técnicamente válido pero frecuente fuente de no conformidades por registros desactualizados o incompletos.</p>
+                        </div>
+                        <a href="https://app.sammetrologia.com/core/solicitar-trial/" target="_blank" class="sam-link">→ SAM mantiene toda la evidencia documental lista para auditorías ISO 9001</a>
+                    </div>
+                </div>
+
+                <!-- P7 -->
+                <div class="faq-card" id="q7">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-num">7</div>
+                        <div class="faq-q-text">
+                            <h3>¿Qué es la trazabilidad metrológica y por qué importa?</h3>
+                            <span class="norma-ref">VIM 2.41 — JCGM 200:2012 · ILAC P10</span>
+                        </div>
+                        <svg class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>La <strong>trazabilidad metrológica</strong> (VIM 2.41) es la propiedad de un resultado de medición por la cual dicho resultado puede relacionarse con una referencia mediante una cadena ininterrumpida y documentada de calibraciones, cada una de las cuales contribuye a la incertidumbre de medición.</p>
+                        <p>En términos prácticos: sus equipos deben poder "rastrear" su calibración hasta el <strong>Sistema Internacional de Unidades (SI)</strong> a través de:</p>
+                        <ul>
+                            <li>Su laboratorio de calibración acreditado ISO 17025</li>
+                            <li>El laboratorio nacional de metrología (en Colombia: <strong>INM — Instituto Nacional de Metrología</strong>)</li>
+                            <li>Los laboratorios primarios internacionales (BIPM)</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <p><strong>¿Por qué importa?</strong> Sin trazabilidad, sus mediciones no son comparables con las de otros laboratorios, proveedores o clientes. En sectores regulados (salud, alimentos, exportaciones), la falta de trazabilidad puede invalidar resultados e impedir la comercialización de productos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- P8 -->
+                <div class="faq-card" id="q8">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-num">8</div>
+                        <div class="faq-q-text">
+                            <h3>¿Qué es un organismo de inspección y qué lo diferencia de un laboratorio?</h3>
+                            <span class="norma-ref">ISO/IEC 17020:2012 · ISO/IEC 17025:2017</span>
+                        </div>
+                        <svg class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>Un <strong>organismo de inspección</strong> según <strong>ISO/IEC 17020:2012</strong> es un organismo que realiza inspecciones — es decir, examina el diseño, producto, instalación, proceso o servicio y determina su conformidad con requisitos específicos o, mediante juicio profesional, con requisitos de carácter general.</p>
+                        <p>La norma define tres tipos según su independencia:</p>
+                        <ul>
+                            <li><strong>Tipo A:</strong> Completamente independiente del cliente y del proveedor. El nivel más alto de independencia exigido por ONAC para ciertas acreditaciones.</li>
+                            <li><strong>Tipo B:</strong> Es parte de la misma organización que diseña, fabrica o suministra el objeto inspeccionado, pero debe estar separado de las actividades de producción.</li>
+                            <li><strong>Tipo C:</strong> Puede realizar inspecciones en los mismos mercados en los que presta otros servicios (diseño, fabricación, suministro, instalación).</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <p><strong>Diferencia con laboratorio:</strong> Un laboratorio (ISO 17025) realiza ensayos y calibraciones con resultados cuantitativos. Un organismo de inspección (ISO 17020) emite una conclusión de conformidad basada en criterios y juicio técnico. Muchas empresas requieren ambas acreditaciones para su operación.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- P9 -->
+                <div class="faq-card" id="q9">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-num">9</div>
+                        <div class="faq-q-text">
+                            <h3>¿Qué es la incertidumbre de medición y por qué aparece en los certificados?</h3>
+                            <span class="norma-ref">GUM — JCGM 100:2008 · VIM 2.26</span>
+                        </div>
+                        <svg class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>La <strong>incertidumbre de medición</strong> (VIM 2.26) es el parámetro no negativo que caracteriza la dispersión de los valores atribuidos a la magnitud medida. En términos simples: cuantifica el rango de duda que existe sobre el resultado de una medición.</p>
+                        <p>Todo certificado de calibración emitido por un laboratorio ISO 17025 debe incluir la incertidumbre expandida (<strong>U</strong>), calculada siguiendo la <strong>Guía para la Expresión de la Incertidumbre de Medición (GUM, JCGM 100:2008)</strong>, con un factor de cobertura k=2 que representa aproximadamente un 95% de nivel de confianza.</p>
+                        <div class="highlight-box">
+                            <p><strong>Ejemplo de lectura:</strong> Si un certificado dice que una balanza indica 100,00 g con U = ±0,05 g (k=2), significa que el valor verdadero está entre 99,95 g y 100,05 g con ~95% de probabilidad. Si su proceso requiere una exactitud mejor que ±0,05 g, ese laboratorio no es adecuado para calibrar esa balanza en ese uso.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- P10 -->
+                <div class="faq-card" id="q10">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-num">10</div>
+                        <div class="faq-q-text">
+                            <h3>¿Qué se debe hacer cuando un equipo falla la calibración?</h3>
+                            <span class="norma-ref">ILAC G8:09/2019 · ISO/IEC 17025:2017 Cláusula 7.10</span>
+                        </div>
+                        <svg class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>Cuando los resultados de calibración indican que el equipo está <strong>fuera de los requisitos metrológicos</strong> (error mayor al error máximo permisible definido), se debe activar el procedimiento de <strong>trabajo no conforme</strong>.</p>
+                        <p>Los pasos requeridos según <strong>ISO/IEC 17025:2017 cláusula 7.10</strong> e <strong>ILAC G8:09/2019</strong> (Reglas de decisión) son:</p>
+                        <ul>
+                            <li><strong>Retirar inmediatamente el equipo del servicio</strong> e identificarlo como "No apto" o "En cuarentena"</li>
+                            <li><strong>Evaluar el impacto retrospectivo:</strong> ¿Qué resultados se obtuvieron con ese equipo mientras estaba fuera de especificación? ¿Afecta decisiones ya tomadas?</li>
+                            <li><strong>Notificar a los clientes afectados</strong> si los resultados comprometidos fueron entregados</li>
+                            <li><strong>Decidir la acción correctiva:</strong> ajuste, reparación, sustitución o retiro definitivo del inventario activo</li>
+                            <li><strong>Recalibrar</strong> después del ajuste o reparación antes de volver a usar</li>
+                            <li><strong>Documentar todo el proceso</strong> como evidencia de acción correctiva</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <p><strong>Riesgo crítico:</strong> No gestionar correctamente este proceso es una de las no conformidades más graves en auditorías de acreditación ONAC. La norma exige evidencia documentada de que se evaluó el impacto en mediciones previas.</p>
+                        </div>
+                        <a href="plataforma.html" class="sam-link">→ SAM gestiona el ciclo de vida completo del equipo, incluyendo el estado de baja y los registros de no conformidad</a>
+                    </div>
+                </div>
+
+            </div><!-- /faq-questions -->
+        </div><!-- /faq-layout -->
+    </section>
+
+    <!-- ── CTA FINAL ───────────────────────────────────── -->
+    <section class="faq-final-cta">
+        <div class="container">
+            <h2>¿Tu empresa gestiona todo esto en Excel?</h2>
+            <p>SAM automatiza la confirmación metrológica, los intervalos de calibración, las comprobaciones intermedias y toda la documentación requerida por ISO 17020 e ISO 9001.</p>
+            <div class="btns">
+                <a href="https://app.sammetrologia.com/core/solicitar-trial/" target="_blank" class="btn-white">Probar SAM gratis 30 días →</a>
+                <a href="contacto.html" class="btn-outline-white">Hablar con un experto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ──────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo-text">SAM</div>
+                    <div class="footer-tagline">METROLOGÍA S.A.S</div>
+                    <p>Gestión metrológica inteligente para organizaciones en Colombia.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="plataforma.html">Plataforma SAM</a></li>
+                        <li><a href="precios.html">Precios</a></li>
+                        <li><a href="metrologia-responde.html">Metrología Responde</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="https://app.sammetrologia.com/core/login/" target="_blank"><strong>Iniciar Sesión</strong></a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:comercial@sammetrologia.com">comercial@sammetrologia.com</a></li>
+                        <li><a href="mailto:info@sammetrologia.com">info@sammetrologia.com</a></li>
+                        <li><a href="mailto:soporte@sammetrologia.com">soporte@sammetrologia.com</a></li>
+                        <li><a href="https://wa.me/573247990534" target="_blank">+57 324 799 0534</a></li>
+                        <li>Colombia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SAM Metrología S.A.S. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/573247990534?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20metrolog%C3%ADa" target="_blank" class="whatsapp-float" aria-label="Escribir por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        ¿Otra pregunta?
+    </a>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        function toggleFaq(el) {
+            const card = el.closest('.faq-card');
+            const isOpen = card.classList.contains('open');
+            // Cierra todos
+            document.querySelectorAll('.faq-card.open').forEach(c => c.classList.remove('open'));
+            // Abre el clickeado si estaba cerrado
+            if (!isOpen) card.classList.add('open');
+        }
+        // Abrir el primero por defecto
+        document.querySelector('.faq-card').classList.add('open');
+    </script>
+</body>
+</html>
