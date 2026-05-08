@@ -210,22 +210,45 @@ p {
 }
 
 .mobile-menu-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
     background: var(--primary-navy);
     border: none;
     cursor: pointer;
-    padding: 10px 12px;
+    padding: 10px 18px;
     border-radius: 8px;
 }
 
 .mobile-menu-toggle span {
-    width: 24px;
-    height: 2.5px;
-    background: var(--white);
-    border-radius: 3px;
-    transition: var(--transition);
+    display: none;
+}
+
+.mobile-menu-toggle::before {
+    content: '☰';
+    color: var(--white);
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.mobile-menu-toggle::after {
+    content: 'Menú';
+    color: var(--white);
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-family: var(--font-primary);
+    letter-spacing: 0.04em;
+}
+
+.mobile-menu-toggle.active::before { content: '✕'; }
+.mobile-menu-toggle.active::after  { content: 'Cerrar'; }
+
+/* Ocultar en escritorio */
+@media (min-width: 769px) {
+    .mobile-menu-toggle {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -233,38 +256,6 @@ p {
     .logo img {
         height: 48px;
     }
-
-    /* Mostrar botón hamburguesa en modo fila con texto */
-    .mobile-menu-toggle {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 8px;
-        padding: 10px 18px;
-    }
-
-    /* Ocultar los spans y usar pseudo-elementos para el ícono y texto */
-    .mobile-menu-toggle span {
-        display: none;
-    }
-    .mobile-menu-toggle::before {
-        content: '☰';
-        color: var(--white);
-        font-size: 1.3rem;
-        line-height: 1;
-    }
-    .mobile-menu-toggle::after {
-        content: 'Menú';
-        color: var(--white);
-        font-size: 0.85rem;
-        font-weight: 700;
-        font-family: var(--font-primary);
-        letter-spacing: 0.04em;
-    }
-
-    /* Cambio a X cuando está abierto */
-    .mobile-menu-toggle.active::before { content: '✕'; }
-    .mobile-menu-toggle.active::after  { content: 'Cerrar'; }
 
     /* Menú de navegación en móvil */
     .nav-menu {
