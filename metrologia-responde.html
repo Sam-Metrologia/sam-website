@@ -146,7 +146,17 @@
             padding: 0 20px;
             align-items: start;
         }
-        @media (max-width: 800px) { .faq-layout { grid-template-columns: 1fr; } }
+        @media (max-width: 800px) {
+            .faq-layout { grid-template-columns: 1fr; }
+            /* Preguntas primero, índice lateral al final */
+            .faq-questions { order: 1; }
+            .faq-index    { order: 2; position: static; margin-top: 2rem; }
+            /* Respuesta: quitar el sangrado izquierdo grande */
+            .faq-a { padding: 0 16px 20px 16px; }
+            /* Título del hero más pequeño */
+            .faq-hero h1 { font-size: 2rem; }
+            .faq-hero p  { font-size: 1rem; }
+        }
 
         /* Índice lateral */
         .faq-index {
