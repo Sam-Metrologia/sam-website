@@ -212,17 +212,18 @@ p {
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
-    gap: 4px;
-    background: none;
+    gap: 5px;
+    background: var(--primary-navy);
     border: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px 12px;
+    border-radius: 8px;
 }
 
 .mobile-menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background: var(--text-dark);
+    width: 24px;
+    height: 2.5px;
+    background: var(--white);
     border-radius: 3px;
     transition: var(--transition);
 }
