@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Página principal - Máxima prioridad -->
     <url>
-        <loc>https://sammetrologia.com/index.html</loc>
-        <lastmod>2025-12-27</lastmod>
+        <loc>https://sammetrologia.com/</loc>
+        <lastmod>2026-07-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -11,7 +11,7 @@
     <!-- Plataforma SAM - Alta prioridad (producto principal) -->
     <url>
         <loc>https://sammetrologia.com/plataforma.html</loc>
-        <lastmod>2025-12-27</lastmod>
+        <lastmod>2026-07-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -19,7 +19,23 @@
     <!-- Servicios - Alta prioridad -->
     <url>
         <loc>https://sammetrologia.com/servicios.html</loc>
-        <lastmod>2025-12-27</lastmod>
+        <lastmod>2026-07-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Precios - Alta prioridad (conversión) -->
+    <url>
+        <loc>https://sammetrologia.com/precios.html</loc>
+        <lastmod>2026-07-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Metrología Responde - Alta prioridad SEO (contenido educativo) -->
+    <url>
+        <loc>https://sammetrologia.com/metrologia-responde.html</loc>
+        <lastmod>2026-07-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -27,7 +43,7 @@
     <!-- Nosotros - Media prioridad -->
     <url>
         <loc>https://sammetrologia.com/nosotros.html</loc>
-        <lastmod>2025-12-27</lastmod>
+        <lastmod>2026-07-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -35,7 +51,7 @@
     <!-- Contacto - Media-alta prioridad (conversión) -->
     <url>
         <loc>https://sammetrologia.com/contacto.html</loc>
-        <lastmod>2025-12-27</lastmod>
+        <lastmod>2026-07-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
