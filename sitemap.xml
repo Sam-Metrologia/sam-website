@@ -48,6 +48,14 @@
         <priority>0.6</priority>
     </url>
 
+    <!-- Alianzas - Partners y revendedores -->
+    <url>
+        <loc>https://sammetrologia.com/alianzas.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
     <!-- Contacto - Media-alta prioridad (conversión) -->
     <url>
         <loc>https://sammetrologia.com/contacto.html</loc>

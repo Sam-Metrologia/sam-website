@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Programa de Alianzas | SAM Metrología</title>
+    <meta name="description" content="Únete al programa de aliados de SAM Metrología. Si prestas servicios metrológicos en Colombia, potencia tu oferta con nuestra plataforma. Tres modelos de colaboración disponibles.">
+    <meta name="keywords" content="alianzas metrología Colombia, revendedor software metrológico, partner metrología, programa aliados SAM">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://sammetrologia.com/alianzas.html">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon-option1.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Programa de Alianzas | SAM Metrología">
+    <meta property="og:description" content="Si prestas servicios metrológicos en Colombia, potencia tu oferta con la plataforma SAM. Tres modelos de colaboración disponibles.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sammetrologia.com/alianzas.html">
+
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-36GSHT3H0P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-36GSHT3H0P');
+    </script>
+
+    <style>
+        .alianzas-hero {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #0A2463 0%, #1E3A8A 100%);
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .alianzas-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 50%, rgba(197,165,114,0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 20%, rgba(59,130,246,0.08) 0%, transparent 40%);
+            pointer-events: none;
+        }
+        .alianzas-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            line-height: 1.15;
+        }
+        .alianzas-hero h1 span {
+            color: #C5A572;
+        }
+        .alianzas-hero p {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.85);
+            max-width: 650px;
+            margin: 0 auto 2rem auto;
+            line-height: 1.7;
+        }
+        .badge-alianza {
+            display: inline-block;
+            background: rgba(197,165,114,0.2);
+            color: #C5A572;
+            border: 1px solid rgba(197,165,114,0.4);
+            padding: 0.4rem 1.2rem;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .modelos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .modelo-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 2.2rem;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+            border-top: 4px solid #0A2463;
+            position: relative;
+        }
+        .modelo-card.destacado {
+            border-top-color: #C5A572;
+            box-shadow: 0 8px 32px rgba(197,165,114,0.18);
+        }
+        .modelo-card.verde {
+            border-top-color: #059669;
+        }
+        .modelo-numero {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #9CA3AF;
+            margin-bottom: 0.6rem;
+        }
+        .modelo-titulo {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #0A2463;
+            margin-bottom: 0.6rem;
+        }
+        .modelo-subtitulo {
+            font-size: 0.92rem;
+            color: #6B7280;
+            margin-bottom: 1.4rem;
+            line-height: 1.6;
+        }
+        .modelo-lista {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5rem 0;
+        }
+        .modelo-lista li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            color: #374151;
+            font-size: 0.93rem;
+            margin-bottom: 0.65rem;
+            line-height: 1.5;
+        }
+        .modelo-lista li::before {
+            content: '✓';
+            color: #059669;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 0.05rem;
+        }
+        .modelo-ideal {
+            background: #F9FAFB;
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            font-size: 0.85rem;
+            color: #6B7280;
+        }
+        .modelo-ideal strong {
+            color: #374151;
+        }
+        .tag-recomendado {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: #C5A572;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.3rem 0.9rem;
+            border-radius: 999px;
+            letter-spacing: 0.05em;
+        }
+        .beneficios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        .beneficio-item {
+            background: #fff;
+            border-radius: 10px;
+            padding: 1.75rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        .beneficio-icono {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .beneficio-titulo {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0A2463;
+            margin-bottom: 0.5rem;
+        }
+        .beneficio-desc {
+            font-size: 0.88rem;
+            color: #6B7280;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .alianzas-form-section {
+            background: #F9FAFB;
+            padding: 80px 0;
+        }
+        .alianzas-form-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 4rem;
+            align-items: start;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .alianzas-form-info h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0A2463;
+            margin-bottom: 1rem;
+            line-height: 1.25;
+        }
+        .alianzas-form-info p {
+            color: #4B5563;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        .proceso-paso {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+        }
+        .paso-numero {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #0A2463;
+            color: #fff;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .paso-texto strong {
+            display: block;
+            color: #374151;
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+        .paso-texto span {
+            color: #6B7280;
+            font-size: 0.87rem;
+        }
+        .aviso-privacidad {
+            background: #EFF6FF;
+            border-left: 4px solid #3B82F6;
+            padding: 1rem 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1.5rem;
+            font-size: 0.87rem;
+            color: #1E40AF;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .alianzas-hero h1 { font-size: 1.9rem; }
+            .alianzas-form-wrapper { grid-template-columns: 1fr; gap: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="SAM Metrología">
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="plataforma.html" class="nav-link">Plataforma SAM</a></li>
+                    <li><a href="precios.html" class="nav-link">Precios</a></li>
+                    <li><a href="metrologia-responde.html" class="nav-link">Aprende</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="https://app.sammetrologia.com/core/login/" class="nav-link">Iniciar Sesión</a></li>
+                    <li><a href="https://app.sammetrologia.com/core/solicitar-trial/" class="nav-link btn-trial" target="_blank">Crear Trial Gratis</a></li>
+                    <li><a href="contacto.html" class="nav-link btn-contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="alianzas-hero">
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="badge-alianza">Programa de Aliados</div>
+            <h1>Crezcamos juntos<br>en <span>metrología</span></h1>
+            <p>Si tu empresa presta servicios metrológicos en Colombia, SAM puede ser la herramienta que potencia tu operación y diferencia tu oferta. Sin competir — complementándonos.</p>
+            <a href="#formulario-alianza" class="btn btn-primary" style="font-size: 1rem; padding: 0.85rem 2.2rem;">Quiero ser aliado</a>
+        </div>
+    </section>
+
+    <!-- Por qué aliarse -->
+    <section style="padding: 80px 0; background: #fff;">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">
+                <h2 style="font-size: 2.1rem; font-weight: 800; color: #0A2463; margin-bottom: 0.75rem;">¿Por qué aliarse con SAM?</h2>
+                <p style="color: #6B7280; font-size: 1.05rem; line-height: 1.7;">Las empresas de servicios metrológicos en Colombia gestionan decenas de clientes con Excel y archivos físicos. SAM resuelve ese problema — y tú puedes ofrecerlo como parte de tu servicio.</p>
+            </div>
+
+            <div class="beneficios-grid">
+                <div class="beneficio-item">
+                    <div class="beneficio-icono">📈</div>
+                    <div class="beneficio-titulo">Amplía tu oferta</div>
+                    <p class="beneficio-desc">Agrega una capa digital a tu servicio técnico sin desarrollar software propio. Tus clientes obtienen más valor, tú obtienes más diferenciación.</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icono">🔒</div>
+                    <div class="beneficio-titulo">Sin conflicto de interés</div>
+                    <p class="beneficio-desc">SAM no presta servicios técnicos en campo. Tú haces la calibración y el trabajo físico — nosotros ponemos la plataforma digital. Roles complementarios, no competitivos.</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icono">💰</div>
+                    <div class="beneficio-titulo">Genera ingresos adicionales</div>
+                    <p class="beneficio-desc">Dependiendo del modelo de alianza, recibes una comisión por cada cliente activo o accedes a la plataforma con condiciones especiales para reventas.</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icono">🤝</div>
+                    <div class="beneficio-titulo">Apoyo técnico y comercial</div>
+                    <p class="beneficio-desc">Te capacitamos en la plataforma, te damos materiales de presentación y acompañamos las primeras demostraciones con tus clientes.</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icono">📋</div>
+                    <div class="beneficio-titulo">Tus clientes mejor atendidos</div>
+                    <p class="beneficio-desc">Con SAM, tus clientes tienen visibilidad total de sus equipos, vencimientos y documentación. Menos urgencias, menos llamadas de pánico — mejor relación.</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icono">🇨🇴</div>
+                    <div class="beneficio-titulo">Hecho para Colombia</div>
+                    <p class="beneficio-desc">SAM está diseñado para el contexto normativo colombiano: ONAC, ISO 17020, requisitos RETIE. No es un software genérico adaptado — es específico para este mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modelos de alianza -->
+    <section style="padding: 80px 0; background: #F9FAFB;">
+        <div class="container">
+            <div style="text-align: center; max-width: 650px; margin: 0 auto 1rem auto;">
+                <h2 style="font-size: 2.1rem; font-weight: 800; color: #0A2463; margin-bottom: 0.75rem;">Tres modelos de colaboración</h2>
+                <p style="color: #6B7280; font-size: 1.05rem; line-height: 1.7;">Elige el que mejor se adapta a tu modelo de negocio. Los detalles y condiciones económicas los discutimos en privado.</p>
+            </div>
+
+            <div class="modelos-grid">
+
+                <!-- Modelo 1: Referido -->
+                <div class="modelo-card verde">
+                    <div class="modelo-numero">Modelo 01</div>
+                    <div class="modelo-titulo">Referido con Comisión</div>
+                    <p class="modelo-subtitulo">La forma más simple de empezar. Nos envías clientes interesados y recibes una comisión por cada uno que se active.</p>
+                    <ul class="modelo-lista">
+                        <li>Sin inversión inicial de tu parte</li>
+                        <li>Comisión durante el primer año de cada cliente referido</li>
+                        <li>El cliente paga directamente a SAM</li>
+                        <li>Tú te enfocas en el servicio técnico</li>
+                        <li>Proceso simple: un mensaje es suficiente para empezar</li>
+                    </ul>
+                    <div class="modelo-ideal">
+                        <strong>Ideal para:</strong> Empresas que quieren explorar la alianza sin compromisos grandes. Laboratorios y consultores independientes.
+                    </div>
+                </div>
+
+                <!-- Modelo 2: Revendedor -->
+                <div class="modelo-card destacado">
+                    <div class="tag-recomendado">Más popular</div>
+                    <div class="modelo-numero">Modelo 02</div>
+                    <div class="modelo-titulo">Revendedor</div>
+                    <p class="modelo-subtitulo">Accedes a SAM con condiciones especiales y lo incluyes dentro de tu oferta de servicios. Tú defines cómo lo presentas a tus clientes.</p>
+                    <ul class="modelo-lista">
+                        <li>Precio de acceso con descuento para aliados</li>
+                        <li>Puedes incluirlo dentro de tu paquete de servicio</li>
+                        <li>Tus clientes no necesitan negociar directamente con SAM</li>
+                        <li>Tú controlas la relación comercial con tu cliente</li>
+                        <li>Capacitación incluida para tu equipo</li>
+                        <li>Materiales de presentación personalizados</li>
+                    </ul>
+                    <div class="modelo-ideal">
+                        <strong>Ideal para:</strong> Empresas de aseguramiento metrológico con cartera de clientes activos que quieren agregar la capa digital a su servicio.
+                    </div>
+                </div>
+
+                <!-- Modelo 3: Marca blanca -->
+                <div class="modelo-card">
+                    <div class="modelo-numero">Modelo 03</div>
+                    <div class="modelo-titulo">Integración Personalizada</div>
+                    <p class="modelo-subtitulo">Para aliados con alto volumen. Exploramos integraciones o adaptaciones de la plataforma que se ajusten a tu operación específica.</p>
+                    <ul class="modelo-lista">
+                        <li>Evaluación conjunta de necesidades técnicas</li>
+                        <li>Posibilidad de flujos de trabajo adaptados</li>
+                        <li>Soporte prioritario para tu operación</li>
+                        <li>Condiciones comerciales según volumen</li>
+                        <li>Acuerdo de confidencialidad desde el primer día</li>
+                    </ul>
+                    <div class="modelo-ideal">
+                        <strong>Ideal para:</strong> Empresas grandes con decenas de clientes activos que necesitan una solución más integrada a su operación actual.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario -->
+    <section class="alianzas-form-section" id="formulario-alianza">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">
+                <h2 style="font-size: 2.1rem; font-weight: 800; color: #0A2463; margin-bottom: 0.75rem;">Hablemos</h2>
+                <p style="color: #6B7280; font-size: 1.05rem; line-height: 1.7;">Sin compromisos. Una conversación de 20 minutos para ver si hay fit entre tu empresa y SAM.</p>
+            </div>
+
+            <div class="alianzas-form-wrapper">
+
+                <!-- Info lateral -->
+                <div class="alianzas-form-info">
+                    <h2>¿Cómo es el proceso?</h2>
+                    <p>Rápido y sin presión. Así funciona desde que nos contactas:</p>
+
+                    <div class="proceso-paso">
+                        <div class="paso-numero">1</div>
+                        <div class="paso-texto">
+                            <strong>Nos cuentas de tu empresa</strong>
+                            <span>Qué servicios prestas, cuántos clientes tienes, cómo operas hoy.</span>
+                        </div>
+                    </div>
+                    <div class="proceso-paso">
+                        <div class="paso-numero">2</div>
+                        <div class="paso-texto">
+                            <strong>Demo de la plataforma</strong>
+                            <span>Te mostramos SAM en acción con casos reales de clientes similares a los tuyos.</span>
+                        </div>
+                    </div>
+                    <div class="proceso-paso">
+                        <div class="paso-numero">3</div>
+                        <div class="paso-texto">
+                            <strong>Definimos el modelo</strong>
+                            <span>Según tu operación, te recomendamos cuál de los tres modelos encaja mejor.</span>
+                        </div>
+                    </div>
+                    <div class="proceso-paso">
+                        <div class="paso-numero">4</div>
+                        <div class="paso-texto">
+                            <strong>Acuerdo y arranque</strong>
+                            <span>Formalizamos en un acuerdo simple y empezamos. Sin burocracia innecesaria.</span>
+                        </div>
+                    </div>
+
+                    <div class="aviso-privacidad">
+                        <strong>Confidencialidad garantizada.</strong> Toda la información que compartas en esta conversación es estrictamente confidencial. Firmamos NDA si lo requieres antes de la reunión.
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="https://formsubmit.co/comercial@sammetrologia.com" method="POST">
+                        <input type="hidden" name="_subject" value="Nueva solicitud de Alianza — sammetrologia.com/alianzas">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://sammetrologia.com/alianzas.html">
+
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cargo">Cargo</label>
+                            <input type="text" id="cargo" name="cargo" placeholder="Director, Gerente, Consultor...">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@empresa.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">WhatsApp / Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="modelo">Modelo de alianza de interés</label>
+                            <select id="modelo" name="modelo">
+                                <option value="">No lo tengo claro aún</option>
+                                <option value="Referido con Comisión">Referido con Comisión</option>
+                                <option value="Revendedor">Revendedor</option>
+                                <option value="Integración Personalizada">Integración Personalizada</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="clientes">¿Cuántos clientes activos maneja tu empresa?</label>
+                            <select id="clientes" name="clientes">
+                                <option value="">Selecciona un rango</option>
+                                <option value="Menos de 10">Menos de 10</option>
+                                <option value="10 a 30">10 a 30</option>
+                                <option value="30 a 100">30 a 100</option>
+                                <option value="Más de 100">Más de 100</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Cuéntanos brevemente tu operación</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Qué servicios prestas, en qué sectores, cómo gestionas hoy la metrología de tus clientes..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Solicitar reunión de alianza</button>
+                        <p style="text-align: center; font-size: 0.82rem; color: #9CA3AF; margin-top: 1rem;">Respondemos en menos de 24 horas hábiles</p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA final -->
+    <section style="padding: 70px 0; background: #0A2463; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 1rem;">¿Prefieres hablar directamente?</h2>
+            <p style="color: rgba(255,255,255,0.8); font-size: 1.05rem; margin-bottom: 2rem;">Escríbenos por WhatsApp y agendamos una llamada hoy mismo.</p>
+            <a href="https://wa.me/573247990534?text=Hola%2C%20quiero%20explorar%20una%20alianza%20con%20SAM%20Metrolog%C3%ADa" target="_blank" class="btn btn-whatsapp" style="font-size: 1rem; padding: 0.85rem 2.2rem; display: inline-flex; align-items: center; gap: 0.6rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Escribir por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo-text">SAM</div>
+                    <div class="footer-tagline">METROLOGÍA S.A.S</div>
+                    <p>Gestión metrológica inteligente para organizaciones en Colombia.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="plataforma.html">Plataforma SAM</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="alianzas.html">Alianzas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="https://app.sammetrologia.com/core/login/" target="_blank"><strong>Iniciar Sesión</strong></a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:comercial@sammetrologia.com">comercial@sammetrologia.com</a></li>
+                        <li><a href="mailto:info@sammetrologia.com">info@sammetrologia.com</a></li>
+                        <li><a href="mailto:soporte@sammetrologia.com">soporte@sammetrologia.com</a></li>
+                        <li><a href="https://wa.me/573247990534" target="_blank">+57 324 799 0534</a></li>
+                        <li>Colombia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SAM Metrología S.A.S. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573247990534?text=Hola%2C%20quiero%20explorar%20una%20alianza%20con%20SAM%20Metrolog%C3%ADa" target="_blank" class="whatsapp-float" aria-label="Escribir por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        ¿Tienes dudas?
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
