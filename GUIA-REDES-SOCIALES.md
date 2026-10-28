@@ -134,7 +134,7 @@ En SAM Metrología entendemos que cada organismo tiene necesidades diferentes. P
 Control digital de equipos, hojas de vida completas, alertas automáticas, reportes en tiempo real
 
 🔹 GESTIÓN DOCUMENTAL
-Procedimientos e instructivos ISO/IEC 17020 personalizados, control de versiones, almacenamiento seguro AWS
+Procedimientos e instructivos ISO/IEC 17020 personalizados, control de versiones, almacenamiento seguro en la nube
 
 🔹 COMPROBACIONES INTERMEDIAS
 Verificación periódica entre calibraciones, certificados digitales, cumplimiento ILAC-G24

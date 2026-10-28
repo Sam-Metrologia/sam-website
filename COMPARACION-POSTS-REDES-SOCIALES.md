@@ -162,7 +162,7 @@ Verificación periódica entre calibraciones
   - 📊 Cumplimiento normativo ISO 17020 garantizado
 - **3 Badges de confianza:**
   - 🇨🇴 Cobertura Nacional
-  - 🔒 AWS Cloud Seguro
+  - 🔒 Nube cifrada
   - 🏆 Especialistas ISO 17020
 - **CTA mejorado:**
   - "¿Tu organismo está listo?"
